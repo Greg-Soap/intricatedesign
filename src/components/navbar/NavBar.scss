@@ -1,0 +1,80 @@
+@import "../../Colors.scss";
+.nav__component {
+  position: fixed;
+  display: flex;
+  width: -webkit-fill-available;
+  z-index: 5;
+  top: 0%;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px 55px;
+  align-items: center;
+  background-color: transparent;
+
+  font-weight: 500;
+  line-height: 23px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Manrope", sans-serif;
+}
+.colorChange {
+  background-color: $bg-off;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}
+
+.nav__header {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-left: 3%;
+}
+
+.companyName {
+  color: $Black;
+}
+
+.links__content {
+  margin-right: 2%;
+}
+
+.links {
+  text-decoration: none;
+  width: 80%;
+  padding: 10px;
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.selected {
+  font-weight: bold;
+}
+.Contact-Link {
+  border: 1px solid $Contact-btn;
+  background-color: $Contact-btn;
+  color: $White;
+  padding: 7px 13px;
+}
+
+a:hover {
+  color: $Black;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav__header {
+    width: auto;
+  }
+  .nav__component {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__component {
+    padding: 1rem 0.5rem;
+  }
+  .nav__header {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 3%;
+  }
+}
