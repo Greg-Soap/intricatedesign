@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.scss";
 
 const Home = () => {
-  return <div className="displaystock">{/* <h1>Home</h1> */}</div>;
+  return <div className="home_container"></div>;
 };
 
 export default Home;
