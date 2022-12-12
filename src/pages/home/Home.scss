@@ -1,3 +1,57 @@
+@import '../../Colors.scss';
+
 .home_container {
-    height: 100vh;
+    height: auto;
+    background-color: $bg-off;
+    padding: 112px 120px;
 }
+
+.home_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.home_textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px;
+    gap: 16px;
+
+    > h1 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        text-align: center;
+        color: $text-heading;
+        margin: 0;
+    }
+
+    > p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #1A1A1A;
+    }
+
+    > button {
+        border: none;
+        background-color: $Contact-btn;
+        padding: 18px 32px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-top: 16px;
+    }
+}
+
