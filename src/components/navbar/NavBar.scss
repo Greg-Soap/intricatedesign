@@ -26,7 +26,23 @@
   align-items: center;
   width: 40%;
   margin-left: 3%;
+
+  .nav_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+
+    > span {
+        background: -webkit-linear-gradient(180deg, #FF8900 0%, #FFF500 48.44%, rgba(255, 137, 0, 0.978495) 100%);        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  }
 }
+
 
 .companyName {
   color: $Black;
@@ -41,22 +57,34 @@
   width: 80%;
   padding: 10px;
   margin-right: 20px;
-  color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
+
+  font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #1A1A1A;
 }
 
 .selected {
   font-weight: bold;
 }
 .Contact-Link {
-  border: 1px solid $Contact-btn;
-  background-color: $Contact-btn;
-  color: $White;
+  border: 2px solid $Contact-btn;
+  background-color: none;
+  color: #FF8900;
   padding: 7px 13px;
+  font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FF8900;
 }
 
 a:hover {
-  color: $Black;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {

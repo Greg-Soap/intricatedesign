@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../hamburger/BurgerMenu";
 import UseMediaQuery from "../mediaquery/UseMediaQuerry";
-import logo from "../../assets/images/MendxLogo.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -30,7 +29,8 @@ const NavBar = () => {
       className={colorChange ? "nav__component colorChange" : "nav__component"}
     >
       <div className="nav__header">
-        <img className="logo" src={logo} alt="" />
+        {/* <img className="logo" src={logo} alt="" /> */}
+        <h1 className="nav_title">INTRICATE <span>DS.</span></h1>
       </div>
 
       {isPageWide ? (
@@ -65,7 +65,7 @@ const NavBar = () => {
             offset={-80}
             onClick={() => handleClick("Our Services")}
           >
-            Our Services
+            Services
           </Link>
 
           <Link
@@ -80,7 +80,7 @@ const NavBar = () => {
             offset={-80}
             onClick={() => handleClick("Contact Us")}
           >
-            Contact Us
+            Get in Touch
           </Link>
         </div>
       ) : (
