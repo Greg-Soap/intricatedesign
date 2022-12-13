@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Home.scss";
 
 const Home = () => {
@@ -12,7 +13,15 @@ const Home = () => {
             aenean nulla eget egestas. Congue vestibulum facilisis sollicitudin
             lacus interdum viverra
           </p>
-          <button>Get in Touch</button>
+          <Link
+            className="home_btn"
+            activeClass="active"
+            smooth
+            spy
+            to="contact"
+          >
+            Get in Touch
+          </Link>
         </div>
       </div>
     </section>

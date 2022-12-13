@@ -40,7 +40,7 @@
         color: #1A1A1A;
     }
 
-    > button {
+    > .home_btn {
         border: none;
         background-color: $Contact-btn;
         padding: 18px 32px;
@@ -52,6 +52,11 @@
         line-height: 20px;
         color: #FFFFFF;
         margin-top: 16px;
+    }
+
+    .home_btn:hover {
+        background-color: $Base-color-light;
+        cursor: pointer;
     }
 }
 
