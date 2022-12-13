@@ -8,15 +8,15 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
       {items.map((cardData) => {
         const { image, title, text, id } = cardData;
         return (
-          <article className={cardClass ? cardClass : "Card"} key={id}>
-            <div className="Card_Image">
-              {image ? <img src={image} alt={title} /> : null}
-            </div>
-            <div className="Card_Details">
-              <h6>{title}</h6>
-              <p>{text}</p>
-            </div>
-          </article>
+          <div className="services_content">
+          <h1 className="services_content_title">
+            Duis posuere viverra convallis non nisl.
+          </h1>
+          <p className="services_content_description">
+            Tellus purus porttitor erat ornare. Integer a aliquam enim sed ut
+            sit. In velit.
+          </p>
+        </div>
         );
       })}
     </div>
