@@ -11,10 +11,10 @@ const MainPage = () => {
     <div>
       <Home />
       <Hero />
-      {/* <About />
+      <About />
       <Goals />
       <Services />
-      <Contact /> */}
+      <Contact />
     </div>
   );
 };

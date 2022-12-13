@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.scss";
-import homeImage from "../../assets/images/heroimage.png";
 
 const Home = () => {
   return (
@@ -16,7 +15,6 @@ const Home = () => {
           <button>Get in Touch</button>
         </div>
       </div>
-      
     </section>
   );
 };
