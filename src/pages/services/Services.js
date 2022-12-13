@@ -15,7 +15,9 @@ const Services = () => {
           <h2>WHAT WE OFFER</h2>
         </div>
         <div className="services_title">
-          <h1>Viverra orci vitae vel purus tempus sed.</h1>
+          <h1>
+            Viverra orci vitae vel purus tempus sed<span>.</span>
+          </h1>
         </div>
       </div>
 
