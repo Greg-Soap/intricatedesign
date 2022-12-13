@@ -14,7 +14,7 @@ const MainPage = () => {
       <About />
       <Goals />
       <Services />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 };
