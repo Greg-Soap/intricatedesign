@@ -1,9 +1,13 @@
 import React from "react";
+import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import "./About.scss";
 import ourStory from "../../assets/images/ourStoryImage.png";
+import ourStory_mobile from "../../assets/images/ourStoryImage_mobile.png";
 import rectangle from "../../assets/images/Rectangle.png";
 
 const About = () => {
+  let isPageWide = UseMediaQuery("(min-width: 769px)");
+
   return (
     <section id="about" className="about_container">
       <div className="about_wrapper">
@@ -32,7 +36,11 @@ const About = () => {
           </div>
         </div>
         <div className="about_right_content">
-          <img src={ourStory} alt="ourStory"></img>
+          {!isPageWide ? (
+            <img src={ourStory} alt="ourStory"></img>
+          ) : (
+            <img src={ourStory_mobile} alt="ourStory"></img>
+          )}
         </div>
       </div>
     </section>

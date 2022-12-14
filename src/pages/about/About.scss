@@ -69,3 +69,40 @@
         color: $text-body;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about_container {
+        padding: 0;
+    }
+
+    .about_wrapper {
+        flex-direction: column;
+    }
+
+    .about_left_content {
+        padding: 52px 16px 0px 16px;
+        gap: 24px;
+    }
+
+    .about_right_content {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .about_title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .about_body {
+
+        > p {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+}

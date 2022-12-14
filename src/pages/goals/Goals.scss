@@ -87,3 +87,58 @@
         color: $text-body;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .goals_container {
+        padding: 112px 16px 112px 16px;
+    }
+
+    .goals_wrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .goals_left_content {
+        gap: 24px;
+
+        > h1 {
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+        > p {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    .goals_right_content {
+        grid-template-columns: none;
+    }
+
+    .goals_reasons {
+
+        > img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    .reason_textbox {
+        gap: 10px;
+
+        > h1 {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        > p {
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+}
