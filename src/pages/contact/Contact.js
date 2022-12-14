@@ -12,7 +12,7 @@ const Contact = () => {
     from_name: "",
     to_name: "Intricate Design",
     message: "",
-    reply_to: "intricatedesignspaces@gmail.com",
+    reply_to: "laura.ogunsola@intricatedesignspaces.com",
     from_email: "",
     subject: "",
   });
