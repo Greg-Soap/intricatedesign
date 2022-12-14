@@ -14,9 +14,8 @@ const Goals = () => {
             Why you should choose us<span>.</span>
           </h1>
           <p className="goals_body">
-            Ac diam urna ut turpis. Et accumsan vitae non eleifend quis. Lectus
-            mi odio pulvinar nulla commodo. Sit eu odio eu egestas id lobortis
-            eu.
+            Our uttermost desire is to fulfill our clients needs and make sure
+            every transaction ends with satisfaction:
           </p>
         </div>
 
@@ -24,40 +23,43 @@ const Goals = () => {
           <div className="goals_reasons">
             <img src={reason1} alt="reason1"></img>
             <div className="reason_textbox">
-              <h1>Duis posuere viverra convallis non nisl.</h1>
+              <h1>Quality:</h1>
               <p>
-                Tellus purus porttitor erat ornare. Integer a aliquam enim sed
-                ut sit.
+                We select products with excellent design, produced with
+                long-lasting materials that satisfy the highest quality and
+                sustainability standards.
               </p>
             </div>
           </div>
           <div className="goals_reasons">
             <img src={reason2} alt="reason2"></img>
             <div className="reason_textbox">
-              <h1>Duis posuere viverra convallis non nisl.</h1>
+              <h1>Attention to detail</h1>
               <p>
-                Tellus purus porttitor erat ornare. Integer a aliquam enim sed
-                ut sit.
+                We make sure to pay great attention to detail; exploring art,
+                crafts, and everything around us to deliver to you the greatest
+                design.
               </p>
             </div>
           </div>
           <div className="goals_reasons">
             <img src={reason3} alt="reason3"></img>
             <div className="reason_textbox">
-              <h1>Duis posuere viverra convallis non nisl.</h1>
+              <h1>Passion</h1>
               <p>
-                Tellus purus porttitor erat ornare. Integer a aliquam enim sed
-                ut sit.
+                We are a community of skilled, capable, and passionate
+                professionals. We also hold the importance of empathy in high
+                regard as individuals.
               </p>
             </div>
           </div>
           <div className="goals_reasons">
             <img src={reason4} alt="reason4"></img>
             <div className="reason_textbox">
-              <h1>Duis posuere viverra convallis non nisl.</h1>
+              <h1>We Deliver</h1>
               <p>
-                Tellus purus porttitor erat ornare. Integer a aliquam enim sed
-                ut sit.
+                We fulfill our commitments and won't skimp on quality when
+                providing our consumers with high-end services and goods.
               </p>
             </div>
           </div>

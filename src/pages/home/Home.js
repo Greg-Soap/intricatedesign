@@ -7,11 +7,10 @@ const Home = () => {
     <section id="home" className="home_container">
       <div className="home_wrapper">
         <div className="home_textbox">
-          <h1>Lectus eget tellus dui congue nec</h1>
+          <h1>INTRICATE DESIGN SPACE</h1>
           <p>
-            Ut cras elementum morbi est egestas quis id pellentesque. Sed elit
-            aenean nulla eget egestas. Congue vestibulum facilisis sollicitudin
-            lacus interdum viverra
+            A creative and groundbreaking interior design company, here to
+            deliver on all your interiors design needs.
           </p>
           <Link
             className="home_btn"
