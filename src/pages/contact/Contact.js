@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
             <div className="contact_group">
               <img src={Address} alt="address" />
-              <h2>Our Address: No 3, Nana Street, Benin City, Edo State.</h2>
+              <h2>6a UBA road chervon drive bera estate</h2>
             </div>
           </div>
         </div>
