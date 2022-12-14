@@ -62,3 +62,37 @@
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .home_container {
+        padding: 112px 16px;
+    }
+    .home_textbox {
+        margin-left: 0;
+
+        > h1 {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: 49px;
+            text-align: center;
+            color: #333333;
+        }
+
+        > p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #1A1A1A;
+
+        }
+    }
+}
+

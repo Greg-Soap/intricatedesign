@@ -1,12 +1,24 @@
 import React from "react";
+import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import "./Services.scss";
 import Rectangle from "../../assets/images/Rectangle.png";
 import ServiceImage1 from "../../assets/images/Service Image1.png";
 import ServiceImage2 from "../../assets/images/Service Image2.png";
 import ServiceImage3 from "../../assets/images/Service Image3.png";
 import ServiceImage4 from "../../assets/images/Service Image4.png";
+import ServiceImage1_mobile from "../../assets/images/Service Image1_mobile.png";
+import ServiceImage2_mobile from "../../assets/images/Service Image2_mobile.png";
+import ServiceImage3_mobile from "../../assets/images/Service Image3_mobile.png";
+import ServiceImage4_mobile from "../../assets/images/Service Image_mobile.png";
 
 const Services = () => {
+  let isPageWide = UseMediaQuery("(min-width: 769px)");
+
+  let services1 = isPageWide ? ServiceImage1 : ServiceImage1_mobile;
+  let services2 = isPageWide ? ServiceImage2 : ServiceImage2_mobile;
+  let services3 = isPageWide ? ServiceImage3 : ServiceImage3_mobile;
+  let services4 = isPageWide ? ServiceImage4 : ServiceImage4_mobile;
+
   return (
     <section id="services" className="services_container">
       <div className="services_title_wrapper">
@@ -24,7 +36,7 @@ const Services = () => {
       <div className="services_content_wrapper">
         <div
           className="services_content"
-          style={{ backgroundImage: `url("${ServiceImage1}")` }}
+          style={{ backgroundImage: `url("${services1}")` }}
         >
           <h1 className="services_content_title">
             Provision of Luxury Designs.
@@ -37,7 +49,7 @@ const Services = () => {
         </div>
         <div
           className="services_content"
-          style={{ backgroundImage: `url("${ServiceImage2}")` }}
+          style={{ backgroundImage: `url("${services2}")` }}
         >
           <h1 className="services_content_title">
             Curation of high quality designs.
@@ -50,7 +62,7 @@ const Services = () => {
         </div>
         <div
           className="services_content"
-          style={{ backgroundImage: `url("${ServiceImage3}")` }}
+          style={{ backgroundImage: `url("${services3}")` }}
         >
           <h1 className="services_content_title">
             Production of custom made pieces.
@@ -62,7 +74,7 @@ const Services = () => {
         </div>
         <div
           className="services_content"
-          style={{ backgroundImage: `url("${ServiceImage4}")` }}
+          style={{ backgroundImage: `url("${services4}")` }}
         >
           <h1 className="services_content_title">Totality of services.</h1>
           <p className="services_content_description">
