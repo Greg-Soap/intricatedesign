@@ -23,7 +23,7 @@ const Goals = () => {
           <div className="goals_reasons">
             <img src={reason1} alt="reason1"></img>
             <div className="reason_textbox">
-              <h1>Quality:</h1>
+              <h1>Quality</h1>
               <p>
                 We select products with excellent design, produced with
                 long-lasting materials that satisfy the highest quality and

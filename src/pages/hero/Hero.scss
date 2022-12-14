@@ -45,3 +45,40 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hero_image {
+        background-image: url('../../assets/images/heroimage_mobile.png');
+    }
+
+    .hero_textbox {
+        padding-top: 108px;
+
+        > div {
+            padding: 4px 4px 4px 16px;
+            gap: 16px;
+
+            > h1 {
+                width: 30px;
+                height: 35px;
+                right: 125px;
+                top: calc(50% - 35px/2 + 0.5px);
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                color: #FFFFFF;
+
+                > span {
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}

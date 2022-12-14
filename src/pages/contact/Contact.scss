@@ -139,3 +139,59 @@
 .contact_btn:hover {
     background-color: $Base-color;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contact_container {
+        padding: 112px 16px 112px 16px;
+    }
+
+    .contact_wrapper {
+        flex-direction: column;
+        gap: 56px;
+    }
+
+    .contact_left {
+        gap: 16px;
+    }
+
+    .content_heading {
+
+        > h1 {
+            font-size: 24px;
+            line-height: 33px;
+        }
+    }
+
+    .contact_title {
+        
+        > h1 {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    .content_body {
+        gap: 16px;
+    }
+
+    .contact_group {
+
+        > img {
+            width: 49px;
+            height: 45px;
+        }
+
+        > h2 {
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    .contact_right {
+        width: 100%;
+    }
+}
