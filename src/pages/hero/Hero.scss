@@ -1,0 +1,47 @@
+
+
+.hero_image {
+    width: 100%;
+    height: auto;
+    background-image: url('../../assets/images/heroimage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_textbox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 220px;
+
+    > div {
+        display: flex;
+        width: auto;
+        gap: 50px;
+        padding: 15px 15px 15px 120px;
+        background-color: rgba(0, 0, 0, 0.53);
+        
+        > h1 {
+            display: flex;
+            flex-direction: column;
+            width: 66px;
+            height: 66px;
+            right: 149px;
+            top: calc(50% - 66px/2);
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+
+            margin: 0;
+
+            color: #FFFFFF;
+            > span {
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    }
+}
