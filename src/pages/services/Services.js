@@ -16,7 +16,7 @@ const Services = () => {
         </div>
         <div className="services_title">
           <h1>
-            Viverra orci vitae vel purus tempus sed<span>.</span>
+            Below are some of the services we offer<span>.</span>
           </h1>
         </div>
       </div>
@@ -27,11 +27,12 @@ const Services = () => {
           style={{ backgroundImage: `url("${ServiceImage1}")` }}
         >
           <h1 className="services_content_title">
-            Duis posuere viverra convallis non nisl.
+            Provision of Luxury Designs.
           </h1>
           <p className="services_content_description">
-            Tellus purus porttitor erat ornare. Integer a aliquam enim sed ut
-            sit. In velit.
+            We create for you a luxurious and opulent environment suited to your
+            taste. Choosing the right furniture, accessories and finishes to
+            create the luxury interior design of you desire.
           </p>
         </div>
         <div
@@ -39,11 +40,12 @@ const Services = () => {
           style={{ backgroundImage: `url("${ServiceImage2}")` }}
         >
           <h1 className="services_content_title">
-            Duis posuere viverra convallis non nisl.
+            Curation of high quality designs.
           </h1>
           <p className="services_content_description">
-            Tellus purus porttitor erat ornare. Integer a aliquam enim sed ut
-            sit. In velit.
+            Our responsibility is to choose and offer the greatest interior
+            design and decorating ideas for a comprehensive project that is made
+            just for you.
           </p>
         </div>
         <div
@@ -51,23 +53,21 @@ const Services = () => {
           style={{ backgroundImage: `url("${ServiceImage3}")` }}
         >
           <h1 className="services_content_title">
-            Duis posuere viverra convallis non nisl.
+            Production of custom made pieces.
           </h1>
           <p className="services_content_description">
-            Tellus purus porttitor erat ornare. Integer a aliquam enim sed ut
-            sit. In velit.
+            We also produce and distribute high-quality kitchen accessories,
+            custom home and furnishings, etc.
           </p>
         </div>
         <div
           className="services_content"
           style={{ backgroundImage: `url("${ServiceImage4}")` }}
         >
-          <h1 className="services_content_title">
-            Duis posuere viverra convallis non nisl.
-          </h1>
+          <h1 className="services_content_title">Totality of services.</h1>
           <p className="services_content_description">
-            Tellus purus porttitor erat ornare. Integer a aliquam enim sed ut
-            sit. In velit.
+            We offer a whole-house solution for our customers. Intricate Design
+            is a holistic ecosystem that can meet all of your needs
           </p>
         </div>
       </div>

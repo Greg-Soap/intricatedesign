@@ -44,21 +44,21 @@ const Contact = () => {
           </div>
           <div className="content_title">
             <h1>
-              Sed maecenas cras urna vel eu<span>.</span>
+              Fill the form to reach out to us<span>.</span>
             </h1>
           </div>
           <div className="content_body">
             <div className="contact_group">
               <img src={Mail} alt="mail" />
-              <h2>Tristique nisi ut</h2>
+              <h2>Our EMail: laura.ogunsola@intricatedesignspaces.com</h2>
             </div>
             <div className="contact_group">
               <img src={Phone} alt="phone" />
-              <h2>Tristique nisi ut</h2>
+              <h2>Our Phone number: 08131913005</h2>
             </div>
             <div className="contact_group">
               <img src={Address} alt="address" />
-              <h2>Tristique nisi ut</h2>
+              <h2>Our Address: No 3, Nana Street, Benin City, Edo State.</h2>
             </div>
           </div>
         </div>
