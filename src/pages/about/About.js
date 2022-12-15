@@ -36,10 +36,14 @@ const About = () => {
           </div>
         </div>
         <div className="about_right_content">
-          {!isPageWide ? (
-            <img src={ourStory} alt="ourStory"></img>
+          {isPageWide ? (
+            <img className="about_img" src={ourStory} alt="ourStory"></img>
           ) : (
-            <img src={ourStory_mobile} alt="ourStory"></img>
+            <img
+              className="about_img_mobile"
+              src={ourStory_mobile}
+              alt="ourStory"
+            ></img>
           )}
         </div>
       </div>
