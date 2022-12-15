@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="content_body">
             <div className="contact_group">
               <img src={Mail} alt="mail" />
-              <h2>Our EMail: laura.ogunsola@intricatedesignspaces.com</h2>
+              <h2>Our EMail: intricatedesignspaces@gmail.com</h2>
             </div>
             <div className="contact_group">
               <img src={Phone} alt="phone" />
