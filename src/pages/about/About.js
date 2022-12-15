@@ -25,8 +25,8 @@ const About = () => {
             <p>
               INTRICATE DESIGN is a interior design and decor company located in
               West Africa, Nigeria. At Intricate Design, we believe that our
-              clients deserve the best life has to offer at that is exactly what
-              we aim to deliver; the best.
+              clients deserve the best life has to offer and that is exactly
+              what we aim to deliver; the best.
             </p>
             <p>
               By providing first class luxury solutions for homes, offices,
@@ -36,10 +36,14 @@ const About = () => {
           </div>
         </div>
         <div className="about_right_content">
-          {!isPageWide ? (
-            <img src={ourStory} alt="ourStory"></img>
+          {isPageWide ? (
+            <img className="about_img" src={ourStory} alt="ourStory"></img>
           ) : (
-            <img src={ourStory_mobile} alt="ourStory"></img>
+            <img
+              className="about_img_mobile"
+              src={ourStory_mobile}
+              alt="ourStory"
+            ></img>
           )}
         </div>
       </div>
