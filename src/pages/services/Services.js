@@ -44,7 +44,7 @@ const Services = () => {
           <p className="services_content_description">
             We create for you a luxurious and opulent environment suited to your
             taste. Choosing the right furniture, accessories and finishes to
-            create the luxury interior design of you desire.
+            create the luxury interior design you desire.
           </p>
         </div>
         <div
