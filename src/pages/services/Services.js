@@ -14,10 +14,10 @@ import ServiceImage4_mobile from "../../assets/images/Service Image_mobile.png";
 const Services = () => {
   let isPageWide = UseMediaQuery("(min-width: 769px)");
 
-  let services1 = isPageWide ? ServiceImage1 : ServiceImage1_mobile;
-  let services2 = isPageWide ? ServiceImage2 : ServiceImage2_mobile;
-  let services3 = isPageWide ? ServiceImage3 : ServiceImage3_mobile;
-  let services4 = isPageWide ? ServiceImage4 : ServiceImage4_mobile;
+  let services1 = !isPageWide ? ServiceImage1 : ServiceImage1_mobile;
+  let services2 = !isPageWide ? ServiceImage2 : ServiceImage2_mobile;
+  let services3 = !isPageWide ? ServiceImage3 : ServiceImage3_mobile;
+  let services4 = !isPageWide ? ServiceImage4 : ServiceImage4_mobile;
 
   return (
     <section id="services" className="services_container">
