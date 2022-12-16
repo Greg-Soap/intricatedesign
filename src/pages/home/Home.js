@@ -10,7 +10,7 @@ const Home = () => {
           <h1>INTRICATE DESIGN SPACE</h1>
           <p>
             A creative and groundbreaking interior design company, here to
-            deliver on all your interiors design needs.
+            deliver on all your interior design needs.
           </p>
           <Link
             className="home_btn"
