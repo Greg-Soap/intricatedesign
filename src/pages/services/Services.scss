@@ -100,8 +100,7 @@
     }
 
     .services_content {
-        padding: 32px 150px 150px 16px;
-        background-size: auto;
+        padding: 32px calc(100% - 60% - 16px) 150px 16px;
         background-position: left;
         gap: 20px;
         width: 60%;

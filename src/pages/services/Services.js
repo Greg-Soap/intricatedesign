@@ -14,10 +14,10 @@ import ServiceImage4_mobile from "../../assets/images/Service Image_mobile.png";
 const Services = () => {
   let isPageWide = UseMediaQuery("(min-width: 769px)");
 
-  let services1 = isPageWide ? ServiceImage1 : ServiceImage1_mobile;
-  let services2 = isPageWide ? ServiceImage2 : ServiceImage2_mobile;
-  let services3 = isPageWide ? ServiceImage3 : ServiceImage3_mobile;
-  let services4 = isPageWide ? ServiceImage4 : ServiceImage4_mobile;
+  let services1 = !isPageWide ? ServiceImage1 : ServiceImage1_mobile;
+  let services2 = !isPageWide ? ServiceImage2 : ServiceImage2_mobile;
+  let services3 = !isPageWide ? ServiceImage3 : ServiceImage3_mobile;
+  let services4 = !isPageWide ? ServiceImage4 : ServiceImage4_mobile;
 
   return (
     <section id="services" className="services_container">
@@ -43,8 +43,8 @@ const Services = () => {
           </h1>
           <p className="services_content_description">
             We create for you a luxurious and opulent environment suited to your
-            taste. Choosing the right furniture, accessories and finishes to
-            create the luxury interior design you desire.
+            taste. Choosing the right furniture, accessories, and finishes to
+            create the luxury interior design of your desire.
           </p>
         </div>
         <div
@@ -55,9 +55,9 @@ const Services = () => {
             Curation of high quality designs.
           </h1>
           <p className="services_content_description">
-            Our responsibility is to choose and offer the greatest interior
-            design and decorating ideas for a comprehensive project that is made
-            just for you.
+            We make it our responsibility to choose the best design pieces and
+            select elements of the highest standards when carrying out our
+            clients’ projects.
           </p>
         </div>
         <div
@@ -69,7 +69,7 @@ const Services = () => {
           </h1>
           <p className="services_content_description">
             We also produce and distribute high-quality kitchen accessories,
-            custom home and furnishings, etc.
+            custom home furnishings, etc.
           </p>
         </div>
         <div
@@ -79,7 +79,7 @@ const Services = () => {
           <h1 className="services_content_title">Totality of services.</h1>
           <p className="services_content_description">
             We offer a whole-house solution for our customers. Intricate Design
-            is a holistic ecosystem that can meet all of your needs
+            is a holistic ecosystem that can meet all of your needs.
           </p>
         </div>
       </div>

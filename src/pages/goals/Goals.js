@@ -14,7 +14,7 @@ const Goals = () => {
             Why you should choose us<span>.</span>
           </h1>
           <p className="goals_body">
-            Our uttermost desire is to fulfill our clients needs and make sure
+            Our uttermost desire is to fulfill our client's needs and make sure
             every transaction ends with satisfaction:
           </p>
         </div>
@@ -34,11 +34,10 @@ const Goals = () => {
           <div className="goals_reasons">
             <img src={reason2} alt="reason2"></img>
             <div className="reason_textbox">
-              <h1>Attention to detail</h1>
+              <h1>Attention to detail:</h1>
               <p>
                 We make sure to pay great attention to detail; exploring art,
-                crafts, and everything around us to deliver to you the greatest
-                design.
+                crafts, and everything around us to deliver the greatest design.
               </p>
             </div>
           </div>
