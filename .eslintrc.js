@@ -17,7 +17,7 @@ module.exports = {
 	},
 	plugins: ["prettier"],
 	rules: {
-		indent: ["error", "tab", { SwitchCase: 1 }],
+		indent: ["error", "tab"],
 		quotes: ["error", "double"],
 		semi: ["error", "always"],
 		"prefer-arrow-callback": "off",
@@ -30,7 +30,7 @@ module.exports = {
 			"error",
 			{
 				semi: true,
-				tabWidth: 2,
+				tabWidth: 1,
 				useTabs: true,
 				printWidth: 100,
 				singleQuote: false,

@@ -37,30 +37,28 @@ const Services = () => {
 				<div className="services_content" style={{ backgroundImage: `url("${services1}")` }}>
 					<h1 className="services_content_title">Provision of Luxury Designs.</h1>
 					<p className="services_content_description">
-						We create for you a luxurious and opulent environment suited to your taste. Choosing the
-						right furniture, accessories, and finishes to create the luxury interior design of your
-						desire.
+						We create for you a luxurious and opulent environment suited to your taste. Choosing the right
+						furniture, accessories, and finishes to create the luxury interior design of your desire.
 					</p>
 				</div>
 				<div className="services_content" style={{ backgroundImage: `url("${services2}")` }}>
 					<h1 className="services_content_title">Curation of high quality designs.</h1>
 					<p className="services_content_description">
-						We make it our responsibility to choose the best design pieces and select elements of
-						the highest standards when carrying out our clients’ projects.
+						We make it our responsibility to choose the best design pieces and select elements of the
+						highest standards when carrying out our clients’ projects.
 					</p>
 				</div>
 				<div className="services_content" style={{ backgroundImage: `url("${services3}")` }}>
 					<h1 className="services_content_title">Production of custom made pieces.</h1>
 					<p className="services_content_description">
-						We also produce and distribute high-quality kitchen accessories, custom home
-						furnishings, etc.
+						We also produce and distribute high-quality kitchen accessories, custom home furnishings, etc.
 					</p>
 				</div>
 				<div className="services_content" style={{ backgroundImage: `url("${services4}")` }}>
 					<h1 className="services_content_title">Totality of services.</h1>
 					<p className="services_content_description">
-						We offer a whole-house solution for our customers. Intricate Design is a holistic
-						ecosystem that can meet all of your needs.
+						We offer a whole-house solution for our customers. Intricate Design is a holistic ecosystem
+						that can meet all of your needs.
 					</p>
 				</div>
 			</div>

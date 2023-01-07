@@ -15,8 +15,8 @@ const Goals = () => {
 						Why you should choose us<span>.</span>
 					</h1>
 					<p className="goals_body">
-						Our uttermost desire is to fulfill our client's needs and make sure every transaction
-						ends with satisfaction:
+						Our uttermost desire is to fulfill our client's needs and make sure every transaction ends
+						with satisfaction:
 					</p>
 				</div>
 
@@ -26,8 +26,8 @@ const Goals = () => {
 						<div className="reason_textbox">
 							<h1>Quality</h1>
 							<p>
-								We select products with excellent design, produced with long-lasting materials that
-								satisfy the highest quality and sustainability standards.
+								We select products with excellent design, produced with long-lasting materials that satisfy
+								the highest quality and sustainability standards.
 							</p>
 						</div>
 					</div>
@@ -36,8 +36,8 @@ const Goals = () => {
 						<div className="reason_textbox">
 							<h1>Attention to detail:</h1>
 							<p>
-								We make sure to pay great attention to detail; exploring art, crafts, and everything
-								around us to deliver the greatest design.
+								We make sure to pay great attention to detail; exploring art, crafts, and everything around
+								us to deliver the greatest design.
 							</p>
 						</div>
 					</div>
@@ -46,8 +46,8 @@ const Goals = () => {
 						<div className="reason_textbox">
 							<h1>Passion</h1>
 							<p>
-								We are a community of skilled, capable, and passionate professionals. We also hold
-								the importance of empathy in high regard as individuals.
+								We are a community of skilled, capable, and passionate professionals. We also hold the
+								importance of empathy in high regard as individuals.
 							</p>
 						</div>
 					</div>
@@ -56,8 +56,8 @@ const Goals = () => {
 						<div className="reason_textbox">
 							<h1>We Deliver</h1>
 							<p>
-								We fulfill our commitments and won't skimp on quality when providing our consumers
-								with high-end services and goods.
+								We fulfill our commitments and won't skimp on quality when providing our consumers with
+								high-end services and goods.
 							</p>
 						</div>
 					</div>

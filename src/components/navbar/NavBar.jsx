@@ -67,9 +67,7 @@ const NavBar = () => {
 					</Link>
 
 					<Link
-						className={
-							selectPage === "Contact Us" ? "links Contact-Link selected" : "links Contact-Link"
-						}
+						className={selectPage === "Contact Us" ? "links Contact-Link selected" : "links Contact-Link"}
 						smooth={true}
 						spy={true}
 						to="contact"

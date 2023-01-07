@@ -23,14 +23,13 @@ const About = () => {
 					</div>
 					<div className="about_body">
 						<p>
-							INTRICATE DESIGN is an interior design and decor company located in West Africa,
-							Nigeria. At Intricate Design, we believe that our clients deserve the best life has to
-							offer; that is exactly what we aim to deliver; the best
+							INTRICATE DESIGN is an interior design and decor company located in West Africa, Nigeria. At
+							Intricate Design, we believe that our clients deserve the best life has to offer; that is
+							exactly what we aim to deliver; the best
 						</p>
 						<p>
-							By providing first-class luxury solutions for homes, offices, hotels, etc.
-							Implementing creative and innovative methods to meet your needs to absolute
-							perfection.
+							By providing first-class luxury solutions for homes, offices, hotels, etc. Implementing
+							creative and innovative methods to meet your needs to absolute perfection.
 						</p>
 					</div>
 				</div>

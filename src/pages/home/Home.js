@@ -9,8 +9,8 @@ const Home = () => {
 				<div className="home_textbox">
 					<h1>INTRICATE DESIGN SPACE</h1>
 					<p>
-						A creative and groundbreaking interior design company, here to deliver on all your
-						interior design needs.
+						A creative and groundbreaking interior design company, here to deliver on all your interior
+						design needs.
 					</p>
 					<Link className="home_btn" activeClass="active" smooth spy to="contact">
 						Get in Touch
