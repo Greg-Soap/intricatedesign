@@ -24,7 +24,7 @@ module.exports = {
 		"linebreak-style": ["off", "windows"],
 		"no-unused-vars": "error",
 		"no-console": ["error", { allow: ["warn", "error"] }],
-		"react/react-in-jsx-scope": "off",
+		"react/react-in-jsx-scope": "error",
 		"react/self-closing-comp": ["error", { component: true, html: true }],
 		"prettier/prettier": [
 			"error",
@@ -36,7 +36,9 @@ module.exports = {
 				singleQuote: false,
 				trailingComma: "none",
 				endOfLine: "auto",
-				arrowParens: "avoid"
+				arrowParens: "avoid",
+				bracketSpacing: true,
+				jsxBracketSameLine: false
 			}
 		]
 	},
