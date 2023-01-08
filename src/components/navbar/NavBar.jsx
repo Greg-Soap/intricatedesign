@@ -25,8 +25,8 @@ const NavBar = () => {
 	window.addEventListener("scroll", changeNavbarColor);
 
 	return (
-		<nav className={colorChange ? "nav__component colorChange" : "nav__component"}>
-			<div className="nav__header">
+		<nav className={colorChange ? "nav_component colorChange" : "nav_component"}>
+			<div className="nav_header">
 				{/* <img className="logo" src={logo} alt="" /> */}
 				<h1 className="nav_title">
 					INTRICATE <span>DS.</span>
@@ -34,40 +34,51 @@ const NavBar = () => {
 			</div>
 
 			{isPageWide ? (
-				<div className="links__content">
+				<div className="links_content">
+					<div className="center">
+						<Link
+							className={selectPage === "Home" ? "links selected" : "links"}
+							smooth={true}
+							spy={true}
+							to="home"
+							offset={-80}
+							onClick={() => handleClick("Home")}
+						>
+							Home
+						</Link>
+						<Link
+							className={selectPage === "About Us" ? "links selected" : "links"}
+							smooth={true}
+							spy={true}
+							to="about"
+							offset={-80}
+							onClick={() => handleClick("About Us")}
+						>
+							About Us
+						</Link>
+						<Link
+							className={selectPage === "Our Services" ? "links selected" : "links"}
+							smooth={true}
+							spy={true}
+							to="services"
+							offset={-80}
+							onClick={() => handleClick("Our Services")}
+						>
+							Services
+						</Link>
+						<Link
+							className={selectPage === "Projects" ? "links selected" : "links"}
+							smooth={true}
+							spy={true}
+							to="services"
+							offset={-80}
+							onClick={() => handleClick("Projects")}
+						>
+							Projects
+						</Link>
+					</div>
 					<Link
-						className={selectPage === "Home" ? "links selected" : "links"}
-						smooth={true}
-						spy={true}
-						to="home"
-						offset={-80}
-						onClick={() => handleClick("Home")}
-					>
-						Home
-					</Link>
-					<Link
-						className={selectPage === "About Us" ? "links selected" : "links"}
-						smooth={true}
-						spy={true}
-						to="about"
-						offset={-80}
-						onClick={() => handleClick("About Us")}
-					>
-						About Us
-					</Link>
-					<Link
-						className={selectPage === "Our Services" ? "links selected" : "links"}
-						smooth={true}
-						spy={true}
-						to="services"
-						offset={-80}
-						onClick={() => handleClick("Our Services")}
-					>
-						Services
-					</Link>
-
-					<Link
-						className={selectPage === "Contact Us" ? "links Contact-Link selected" : "links Contact-Link"}
+						className={selectPage === "Contact Us" ? "links Contact_Link selected" : "links Contact_Link"}
 						smooth={true}
 						spy={true}
 						to="contact"
