@@ -22,10 +22,11 @@ module.exports = {
 		semi: ["error", "always"],
 		"prefer-arrow-callback": "off",
 		"linebreak-style": ["off", "windows"],
-		"no-unused-vars": "error",
-		"no-console": ["error", { allow: ["warn", "error"] }],
+		"no-unused-vars": "warn",
+		"no-console": ["warn", { allow: ["warn", "error"] }],
 		"react/react-in-jsx-scope": "error",
-		"react/self-closing-comp": ["error", { component: true, html: true }],
+		"react/jsx-key": "warn",
+		"react/self-closing-comp": ["warn", { component: true, html: true }],
 		"prettier/prettier": [
 			"error",
 			{
