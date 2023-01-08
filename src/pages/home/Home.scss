@@ -1,86 +1,84 @@
-@import "../../Colors.scss";
+@import "../../styles/Colors.scss";
+@import "../../styles/fonts";
+@import "../../styles/breakpoints";
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap");
 
 .home_container {
 	height: auto;
 	background-color: $bg-off;
 	padding: 112px 120px;
-}
-
-.home_wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.home_textbox {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-left: 85px;
-	gap: 16px;
-
-	> h1 {
-		font-family: 'Sora', sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 60px;
-		line-height: 82px;
-		text-align: center;
-		color: $text-heading;
-		margin: 0;
+	@include tablet {
+		padding: 112px 16px;
 	}
+	.home_wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 
-	> p {
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 150%;
-		text-align: center;
-		color: #1a1a1a;
+		.home_textbox {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-left: 85px;
+			gap: 16px;
+			@include tablet {
+				margin-left: 0;
+			}
+
+			h1 {
+				font-family: "Sora", sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 60px;
+				line-height: 82px;
+				text-align: center;
+				color: $text-heading;
+				margin: 0;
+				@include tablet {
+					font-weight: 800;
+					font-size: 36px;
+					line-height: 49px;
+				}
+			}
+
+			p {
+				font-family: "Open Sans";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				color: #1a1a1a;
+			}
+
+			.home_btn {
+				border: none;
+				background-color: $Contact-btn;
+				padding: 18px 32px;
+
+				font-family: "Open Sans";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 18px;
+				line-height: 20px;
+				color: #ffffff;
+				margin-top: 16px;
+				:hover {
+					background-color: $Base-color-light;
+					cursor: pointer;
+				}
+			}
+		}
 	}
-
-	> .home_btn {
-		border: none;
-		background-color: $Contact-btn;
-		padding: 18px 32px;
-
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 800;
-		font-size: 18px;
-		line-height: 20px;
-		color: #ffffff;
-		margin-top: 16px;
-	}
-
-	.home_btn:hover {
-		background-color: $Base-color-light;
-		cursor: pointer;
-	}
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
 	.home_container {
-		padding: 112px 16px;
 	}
 	.home_textbox {
-		margin-left: 0;
-
 		> h1 {
-			font-family: "Open Sans";
-			font-style: normal;
-			font-weight: 800;
-			font-size: 36px;
-			line-height: 49px;
-			text-align: center;
-			color: #333333;
 		}
 
 		> p {
