@@ -3,156 +3,156 @@
 @import "../../styles/breakpoints";
 
 .contact_container {
-	height: auto;
-	background-color: $bg-off;
-	padding: 112px 99px 112px 99px;
-	@include tablet {
-		padding: 112px 16px 112px 16px;
-	}
-	.contact_wrapper {
-		display: flex;
-		flex-direction: row;
-		gap: 122px;
-		justify-content: space-between;
-		@include tablet {
-			flex-direction: column;
-			gap: 56px;
-		}
-		.contact_left {
-			display: flex;
-			flex-direction: column;
-			gap: 32px;
-			@include tablet {
-				gap: 16px;
-			}
-			.content_heading {
-				display: flex;
-				flex-direction: row;
-				gap: 16px;
-				align-items: center;
-				justify-content: left;
+  height: auto;
+  background-color: $bg-off;
+  padding: 112px 99px 112px 99px;
+  @include tablet {
+    padding: 112px 16px 112px 16px;
+  }
+  .contact_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 122px;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      gap: 56px;
+    }
+    .contact_left {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      @include tablet {
+        gap: 16px;
+      }
+      .content_heading {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: left;
 
-				img {
-					width: 4px;
-					height: 33px;
-				}
+        img {
+          width: 4px;
+          height: 33px;
+        }
 
-				h1 {
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 600;
-					font-size: 24px;
-					line-height: 33px;
-					color: #717171;
-					@include tablet {
-						font-size: 24px;
-						line-height: 33px;
-					}
-				}
-			}
-			.contact_title {
-				h1 {
-					margin: 0px;
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 800;
-					font-size: 36px;
-					line-height: 49px;
-					color: #333333;
-					@include tablet {
-						font-size: 32px;
-						line-height: 44px;
-					}
+        h1 {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 33px;
+          color: #717171;
+          @include tablet {
+            font-size: 24px;
+            line-height: 33px;
+          }
+        }
+      }
+      .contact_title {
+        h1 {
+          margin: 0px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 49px;
+          color: #333333;
+          @include tablet {
+            font-size: 32px;
+            line-height: 44px;
+          }
 
-					span {
-						color: $links;
-					}
-				}
-			}
-			.content_body {
-				display: flex;
-				flex-direction: column;
-				gap: 52px;
-				@include tablet {
-					gap: 16px;
-				}
-				.contact_group {
-					display: flex;
-					flex-direction: row;
-					gap: 16px;
+          span {
+            color: $links;
+          }
+        }
+      }
+      .content_body {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+        @include tablet {
+          gap: 16px;
+        }
+        .contact_group {
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
 
-					img {
-						width: 49px;
-						height: 45px;
-					}
+          img {
+            width: 49px;
+            height: 45px;
+          }
 
-					h2 {
-						margin: 0px;
-						font-family: "Open Sans";
-						font-style: normal;
-						font-weight: 600;
-						font-size: 18px;
-						line-height: 150%;
-						color: #1a1a1a;
-						@include tablet {
-							font-size: 18px;
-							line-height: 150%;
-						}
-					}
-				}
-			}
-		}
-		.contact_right {
-			width: 40%;
-			@include tablet {
-				width: 100%;
-			}
-			.contact_form {
-				display: flex;
-				flex-direction: column;
-				.form_control {
-					display: block;
-					padding: 1rem 1rem;
-					border: 1px black solid;
-					margin-bottom: 0.5rem;
-					background: $White;
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 600;
-					font-size: 16px;
-					line-height: 22px;
-					color: #b8b8b8;
-					:focus-within {
-						outline: transparent;
-					}
-				}
-				.form_label {
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 400;
-					font-size: 13px;
-					line-height: 18px;
-					color: #1a1a1a;
-				}
-				.contact_btn {
-					text-transform: capitalize;
-					background: $Contact-btn;
-					color: $White;
-					padding: 1rem 1.5rem;
-					letter-spacing: 2px;
-					display: inline-block;
-					font-weight: 700;
-					font-size: 1.1rem;
-					border: none;
-					cursor: pointer;
-					width: 100%;
-					margin-top: 1.2rem;
-					:hover {
-						background-color: $Base-color;
-					}
-					box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-				}
-			}
-		}
-	}
+          h2 {
+            margin: 0px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            color: #1a1a1a;
+            @include tablet {
+              font-size: 18px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+    .contact_right {
+      width: 40%;
+      @include tablet {
+        width: 100%;
+      }
+      .contact_form {
+        display: flex;
+        flex-direction: column;
+        .form_control {
+          display: block;
+          padding: 1rem 1rem;
+          border: 1px black solid;
+          margin-bottom: 0.5rem;
+          background: $White;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: #b8b8b8;
+          :focus-within {
+            outline: transparent;
+          }
+        }
+        .form_label {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          color: #1a1a1a;
+        }
+        .contact_btn {
+          text-transform: capitalize;
+          background: $Contact-btn;
+          color: $White;
+          padding: 1rem 1.5rem;
+          letter-spacing: 2px;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 1.1rem;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-top: 1.2rem;
+          :hover {
+            background-color: $Base-color;
+          }
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
 }
