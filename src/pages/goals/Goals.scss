@@ -3,141 +3,141 @@
 @import "../../styles/breakpoints";
 
 .goals_container {
-	height: auto;
-	background-color: $bg-off;
-	padding: 112px 99px 112px 99px;
+  height: auto;
+  background-color: $bg-off;
+  padding: 112px 99px 112px 99px;
 }
 
 .goals_wrapper {
-	display: flex;
-	flex-direction: row;
-	gap: 122px;
+  display: flex;
+  flex-direction: row;
+  gap: 122px;
 }
 
 .goals_left_content {
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
-	> h1 {
-		margin: 0px;
-		width: 80%;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 800;
-		font-size: 36px;
-		line-height: 49px;
+  > h1 {
+    margin: 0px;
+    width: 80%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
 
-		color: $text-heading;
+    color: $text-heading;
 
-		> span {
-			color: $links;
-		}
-	}
+    > span {
+      color: $links;
+    }
+  }
 
-	> p {
-		margin: 0px;
-		width: 95%;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 150%;
-		color: $text-body;
-	}
+  > p {
+    margin: 0px;
+    width: 95%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $text-body;
+  }
 }
 
 .goals_right_content {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 56px 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px 64px;
 }
 
 .goals_reasons {
-	display: flex;
-	gap: 16px;
+  display: flex;
+  gap: 16px;
 
-	> img {
-		width: 56px;
-		height: 56px;
-	}
+  > img {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 .reason_textbox {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-	> h1 {
-		margin: 0px;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 25px;
-		color: $text-heading;
-	}
+  > h1 {
+    margin: 0px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: $text-heading;
+  }
 
-	> p {
-		margin: 0px;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 150%;
-		color: $text-body;
-	}
+  > p {
+    margin: 0px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $text-body;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
 @media screen and (max-width: 768px) {
-	.goals_container {
-		padding: 112px 16px 112px 16px;
-	}
+  .goals_container {
+    padding: 112px 16px 112px 16px;
+  }
 
-	.goals_wrapper {
-		flex-direction: column;
-		gap: 32px;
-	}
+  .goals_wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
 
-	.goals_left_content {
-		gap: 24px;
+  .goals_left_content {
+    gap: 24px;
 
-		> h1 {
-			font-size: 32px;
-			line-height: 44px;
-		}
+    > h1 {
+      font-size: 32px;
+      line-height: 44px;
+    }
 
-		> p {
-			font-size: 18px;
-			line-height: 150%;
-		}
-	}
+    > p {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
 
-	.goals_right_content {
-		grid-template-columns: none;
-	}
+  .goals_right_content {
+    grid-template-columns: none;
+  }
 
-	.goals_reasons {
-		> img {
-			width: 42px;
-			height: 42px;
-		}
-	}
+  .goals_reasons {
+    > img {
+      width: 42px;
+      height: 42px;
+    }
+  }
 
-	.reason_textbox {
-		gap: 10px;
+  .reason_textbox {
+    gap: 10px;
 
-		> h1 {
-			font-size: 18px;
-			line-height: 25px;
-		}
+    > h1 {
+      font-size: 18px;
+      line-height: 25px;
+    }
 
-		> p {
-			font-size: 14px;
-			line-height: 150%;
-		}
-	}
+    > p {
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
 }

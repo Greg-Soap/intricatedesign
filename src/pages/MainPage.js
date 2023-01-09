@@ -7,16 +7,16 @@ import Services from "./services/Services";
 import Contact from "./contact/Contact";
 
 const MainPage = () => {
-	return (
-		<div>
-			<Home />
-			<Hero />
-			<About />
-			<Goals />
-			<Services />
-			<Contact />
-		</div>
-	);
+  return (
+    <div>
+      <Home />
+      <Hero />
+      <About />
+      <Goals />
+      <Services />
+      <Contact />
+    </div>
+  );
 };
 
 export default MainPage;

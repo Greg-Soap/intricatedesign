@@ -4,91 +4,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap");
 
 .home_container {
-	height: auto;
-	background-color: $bg-off;
-	padding: 112px 120px;
-	@include tablet {
-		padding: 112px 16px;
-	}
-	.home_wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+  height: auto;
+  background-color: $bg-off;
+  padding: 112px 120px;
+  @include tablet {
+    padding: 112px 16px;
+  }
+  .home_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
-		.home_textbox {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-left: 85px;
-			gap: 16px;
-			@include tablet {
-				margin-left: 0;
-			}
+    .home_textbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 85px;
+      gap: 16px;
+      @include tablet {
+        margin-left: 0;
+      }
 
-			h1 {
-				font-family: "Sora", sans-serif;
-				font-style: normal;
-				font-weight: 700;
-				font-size: 60px;
-				line-height: 82px;
-				text-align: center;
-				color: $text-heading;
-				margin: 0;
-				@include tablet {
-					font-weight: 800;
-					font-size: 36px;
-					line-height: 49px;
-				}
-			}
+      h1 {
+        font-family: "Sora", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 82px;
+        text-align: center;
+        color: $text-heading;
+        margin: 0;
+        @include tablet {
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 49px;
+        }
+      }
 
-			p {
-				font-family: "Open Sans";
-				font-style: normal;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 150%;
-				text-align: center;
-				color: #1a1a1a;
-			}
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #1a1a1a;
+      }
 
-			.home_btn {
-				border: none;
-				background-color: $Contact-btn;
-				padding: 18px 32px;
+      .home_btn {
+        border: none;
+        background-color: $Contact-btn;
+        padding: 18px 32px;
 
-				font-family: "Open Sans";
-				font-style: normal;
-				font-weight: 800;
-				font-size: 18px;
-				line-height: 20px;
-				color: #ffffff;
-				margin-top: 16px;
-				:hover {
-					background-color: $Base-color-light;
-					cursor: pointer;
-				}
-			}
-		}
-	}
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        color: #ffffff;
+        margin-top: 16px;
+        :hover {
+          background-color: $Base-color-light;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.home_container {
-	}
-	.home_textbox {
-		> h1 {
-		}
+  .home_container {
+  }
+  .home_textbox {
+    > h1 {
+    }
 
-		> p {
-			font-family: "Open Sans";
-			font-style: normal;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 150%;
-			text-align: center;
-			color: #1a1a1a;
-		}
-	}
+    > p {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #1a1a1a;
+    }
+  }
 }
