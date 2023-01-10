@@ -17,4 +17,13 @@
 @font-face {
 	font-family: "Sora Bold";
 	src: local("Sora Bold"), url(../assets/fonts/Sora/Sora-Bold.ttf) format("ttf");
+=======
+  font-family: "Sora-Bold";
+  src: local("Sora-Bold"), url(../assets/fonts/Sora/Sora-Bold.ttf) format("ttf");
+>>>>>>> Stashed changes
 }
+
+$Sora: Sora, sans-serif;
+$SoraBold: Sora-Bold, sans-serif;
+$Nunito: Nunito Sans, sans-serif;
+$NunitoBold: Nunito Sans, sans-serif;
