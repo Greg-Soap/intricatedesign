@@ -28,28 +28,18 @@ const Contact = () => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
 	};
 
-<<<<<<< Updated upstream
 	return (
 		<section id="contact" className="contact_container">
 			<div className="contact_wrapper">
 				<div className="contact_left">
-					<div className="content_heading">
-						<img src={Rectangle} alt="rectangle" />
-						<h1>GET IN TOUCH</h1>
-					</div>
-					<div className="content_title">
-						<h1>
-							Fill the form to reach out to us<span>.</span>
-						</h1>
-					</div>
 					<div className="content_body">
 						<div className="contact_group">
-							<img src={Mail} alt="mail" />
-							<h2>Our EMail: intricatedesignspaces@gmail.com</h2>
+							<img src={Phone} alt="phone" />
+							<h2>+234-8131913005</h2>
 						</div>
 						<div className="contact_group">
-							<img src={Phone} alt="phone" />
-							<h2>Our Phone number: 08131913005</h2>
+							<img src={Mail} alt="mail" />
+							<h2>intricatedesignspaces@gmail.com</h2>
 						</div>
 						<div className="contact_group">
 							<img src={Address} alt="address" />
@@ -59,6 +49,10 @@ const Contact = () => {
 				</div>
 
 				<div className="contact_right">
+					<h2 className="content_heading">GET IN TOUCH</h2>
+					<h1 className="content_title">
+						Fill the form to <span>reach out</span> to us.
+					</h1>
 					<form className="contact_form" onSubmit={onSubmit}>
 						<label className="form_label">Full Name</label>
 						<input
@@ -106,80 +100,6 @@ const Contact = () => {
 			</div>
 		</section>
 	);
-=======
-  return (
-    <section id="contact" className="contact_container">
-      <div className="contact_wrapper">
-        <div className="contact_left">
-          <div className="content_body">
-            <div className="contact_group">
-              <img src={Phone} alt="phone" />
-              <h2>+234-8131913005</h2>
-            </div>
-            <div className="contact_group">
-              <img src={Mail} alt="mail" />
-              <h2>intricatedesignspaces@gmail.com</h2>
-            </div>
-            <div className="contact_group">
-              <img src={Address} alt="address" />
-              <h2>6a UBA road chervon drive bera estate</h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="contact_right">
-          <h2 className="content_heading">GET IN TOUCH</h2>
-          <h1 className="content_title">
-            Fill the form to <span>reach out</span> to us.
-          </h1>
-          <form className="contact_form" onSubmit={onSubmit}>
-            <label className="form_label">Full Name</label>
-            <input
-              type="text"
-              placeholder="Your full name"
-              name="from_name"
-              value={toSend.from_name}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Email</label>
-            <input
-              type="email"
-              placeholder="Your email address"
-              name="from_email"
-              value={toSend.from_email}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Subject</label>
-            <input
-              type="text"
-              placeholder="Subject"
-              name="subject"
-              value={toSend.subject}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Message</label>
-            <textarea
-              name="message"
-              placeholder="Your message"
-              type="text"
-              cols="30"
-              rows="10"
-              value={toSend.message}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <button type="submit" className="contact_btn">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-  );
->>>>>>> Stashed changes
 };
 
 export default Contact;
