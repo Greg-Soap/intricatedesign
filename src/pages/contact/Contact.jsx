@@ -28,6 +28,7 @@ const Contact = () => {
 		setToSend({ ...toSend, [e.target.name]: e.target.value });
 	};
 
+<<<<<<< Updated upstream
 	return (
 		<section id="contact" className="contact_container">
 			<div className="contact_wrapper">
