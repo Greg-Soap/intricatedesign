@@ -8,25 +8,25 @@ import Phone from "../../assets/images/phone.svg";
 import Address from "../../assets/images/map-pin.svg";
 
 const Contact = () => {
-	const [toSend, setToSend] = useState({
-		from_name: "",
-		to_name: "Intricate Design",
-		message: "",
-		reply_to: "laura.ogunsola@intricatedesignspaces.com",
-		from_email: "",
-		subject: ""
-	});
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "Intricate Design",
+    message: "",
+    reply_to: "laura.ogunsola@intricatedesignspaces.com",
+    from_email: "",
+    subject: "",
+  });
 
-	const onSubmit = e => {
-		e.preventDefault();
-		send("service_uj89d5n", "template_o468gn3", toSend, "_KkPJ9bejYGK0Ci_U");
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_uj89d5n", "template_o468gn3", toSend, "_KkPJ9bejYGK0Ci_U");
 
-		SuccessfulNotification("Mail Sent Successfully");
-	};
+    SuccessfulNotification("Mail Sent Successfully");
+  };
 
-	const handleChange = e => {
-		setToSend({ ...toSend, [e.target.name]: e.target.value });
-	};
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
 
 	return (
 		<section id="contact" className="contact_container">
@@ -100,6 +100,7 @@ const Contact = () => {
 			</div>
 		</section>
 	);
+
 };
 
 export default Contact;
