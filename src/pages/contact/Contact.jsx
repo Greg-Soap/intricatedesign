@@ -1,11 +1,14 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import "./Contact.scss";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
-import Rectangle from "../../assets/images/Rectangle.png";
-import Mail from "../../assets/images/mail.png";
-import Phone from "../../assets/images/phone.png";
-import Address from "../../assets/images/locationpin.png";
+import Mail from "../../assets/images/envelope-open-text.svg";
+import Phone from "../../assets/images/phone.svg";
+import Address from "../../assets/images/map-pin.svg";
+import Facebook from "../../assets/images/Facebook.png";
+import Twitter from "../../assets/images/Twitter.png";
+import Instagram from "../../assets/images/Instagram.png";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -32,32 +35,32 @@ const Contact = () => {
     <section id="contact" className="contact_container">
       <div className="contact_wrapper">
         <div className="contact_left">
-          <div className="content_heading">
-            <img src={Rectangle} alt="rectangle" />
-            <h1>GET IN TOUCH</h1>
-          </div>
-          <div className="content_title">
-            <h1>
-              Fill the form to reach out to us<span>.</span>
-            </h1>
-          </div>
           <div className="content_body">
             <div className="contact_group">
-              <img src={Mail} alt="mail" />
-              <h2>Our EMail: intricatedesignspaces@gmail.com</h2>
+              <img src={Phone} alt="phone" />
+              <h2>+234-8131913005</h2>
             </div>
             <div className="contact_group">
-              <img src={Phone} alt="phone" />
-              <h2>Our Phone number: 08131913005</h2>
+              <img src={Mail} alt="mail" />
+              <h2>intricatedesignspaces@gmail.com</h2>
             </div>
             <div className="contact_group">
               <img src={Address} alt="address" />
               <h2>6a UBA road chervon drive bera estate</h2>
             </div>
           </div>
+          <div className="content_social">
+            Our Socials: <img src={Facebook} alt="" />
+            <img src={Twitter} alt="" />
+            <img src={Instagram} alt="" />
+          </div>
         </div>
 
         <div className="contact_right">
+          <h2 className="content_heading">GET IN TOUCH</h2>
+          <h1 className="content_title">
+            Fill the form to <span>reach out</span> to us.
+          </h1>
           <form className="contact_form" onSubmit={onSubmit}>
             <label className="form_label">Full Name</label>
             <input

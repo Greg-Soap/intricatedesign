@@ -5,139 +5,89 @@
 .goals_container {
   height: auto;
   background-color: $bg-off;
-  padding: 112px 99px 112px 99px;
-}
 
-.goals_wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 122px;
-}
-
-.goals_left_content {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-
-  > h1 {
-    margin: 0px;
-    width: 80%;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 49px;
-
-    color: $text-heading;
-
-    > span {
-      color: $links;
-    }
-  }
-
-  > p {
-    margin: 0px;
-    width: 95%;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    color: $text-body;
-  }
-}
-
-.goals_right_content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px 64px;
-}
-
-.goals_reasons {
-  display: flex;
-  gap: 16px;
-
-  > img {
-    width: 56px;
-    height: 56px;
-  }
-}
-
-.reason_textbox {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  > h1 {
-    margin: 0px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    color: $text-heading;
-  }
-
-  > p {
-    margin: 0px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: $text-body;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 768px) {
-  .goals_container {
-    padding: 112px 16px 112px 16px;
-  }
-
-  .goals_wrapper {
+  .goals_title_wrapper {
+    display: flex;
     flex-direction: column;
-    gap: 32px;
-  }
-
-  .goals_left_content {
-    gap: 24px;
-
-    > h1 {
-      font-size: 32px;
-      line-height: 44px;
-    }
-
-    > p {
-      font-size: 18px;
-      line-height: 150%;
-    }
-  }
-
-  .goals_right_content {
-    grid-template-columns: none;
-  }
-
-  .goals_reasons {
-    > img {
-      width: 42px;
-      height: 42px;
-    }
-  }
-
-  .reason_textbox {
     gap: 10px;
-
-    > h1 {
+    padding: 6rem;
+    padding-bottom: 0rem;
+    @include tablet {
+      padding: 1.5rem;
+    }
+    .goals_header {
+      font-family: $Nunito;
+      font-style: normal;
+      font-weight: 300;
       font-size: 18px;
       line-height: 25px;
+      letter-spacing: 0.065em;
+      text-transform: uppercase;
+      margin: 0;
+      color: $footer;
+      @include tablet {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .goals_title {
+      font-family: $SoraBold;
+      font-style: normal;
+      font-weight: 600;
+      margin: 0;
+      font-size: 40px;
+      line-height: 50px;
+      color: #333333;
+      @include tablet {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      span {
+        color: $links;
+      }
+    }
+  }
+  .goals_content_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    @include tablet {
+      flex-direction: column;
+      margin-top: 0;
+      padding: 1rem;
+      gap: 24px;
     }
 
-    > p {
-      font-size: 14px;
-      line-height: 150%;
+    .goals_content {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      border: 1px solid #d9d9d9;
+      @include tablet {
+        padding: 1rem;
+      }
+      .title {
+        font-family: $Sora;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #5a5a5a;
+        margin-bottom: 65px;
+      }
+      img {
+        width: 96px;
+        object-fit: contain;
+      }
+      .desc {
+        font-family: $Nunito;
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #666666;
+      }
     }
   }
 }

@@ -3,93 +3,93 @@
 @import "../../styles/breakpoints";
 
 .about_container {
-	height: auto;
-	background-color: $bg-off;
-	padding: 112px 0px 112px 99px;
-	@include tablet {
-		padding: 0;
-	}
-	.about_wrapper {
-		display: flex;
-		flex-direction: row;
-		gap: 92px;
-		@include tablet {
-			flex-direction: column;
-		}
+  height: auto;
+  background-color: $bg-off;
+  padding: 6rem;
+  @include tablet {
+    padding: 1.5rem;
+  }
+  .about_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 92px;
+    @include tablet {
+      flex-direction: column;
+      gap: 70px;
+    }
 
-		.about_left_content {
-			display: flex;
-			flex-direction: column;
-			gap: 32px;
-			@include tablet {
-				padding: 52px 16px 0px 16px;
-				gap: 24px;
-			}
-			.about_header {
-				display: flex;
-				flex-direction: row;
-				gap: 16px;
-				align-items: center;
-				justify-content: left;
+    .about_left_content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
 
-				img {
-					width: 4px;
-					height: 33px;
-				}
-
-				h1 {
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 600;
-					font-size: 24px;
-					line-height: 33px;
-					color: #717171;
-					margin: 0;
-				}
-			}
-			.about_title {
-				@include tablet {
-					font-size: 32px;
-					line-height: 44px;
-				}
-				h1 {
-					margin: 0px;
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 800;
-					font-size: 36px;
-					line-height: 49px;
-					color: $text-heading;
-
-					span {
-						color: $links;
-					}
-				}
-			}
-			.about_body {
-				> p {
-					font-family: "Open Sans";
-					font-style: normal;
-					font-weight: 400;
-					font-size: 18px;
-					line-height: 150%;
-					color: $text-body;
-					@include tablet {
-						font-size: 18px;
-						line-height: 150%;
-					}
-				}
-			}
-		}
-		.about_right_content {
-			@include tablet {
-				width: 100%;
-				overflow: hidden;
-			}
-			.about_img {
-				width: 710px;
-				height: 461px;
-			}
-		}
-	}
+      .about_header {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.065em;
+        text-transform: uppercase;
+        margin: 0;
+        color: $footer;
+        @include tablet {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .about_title {
+        font-family: $SoraBold;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+        color: #333333;
+        @include tablet {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        span {
+          color: $links;
+        }
+      }
+      .about_body {
+        p {
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #666666;
+          text-align: justify;
+          .dot {
+            padding: 8px;
+            display: inline-block;
+            vertical-align: middle;
+            background: #ff8900;
+          }
+          @include tablet {
+            font-size: 18px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+    .about_right_content {
+      flex: 1;
+      .wrapper {
+        position: relative;
+        .Badge {
+          width: 101px;
+          height: 101px;
+          position: absolute;
+          top: 10px;
+          right: 50px;
+        }
+      }
+    }
+  }
 }

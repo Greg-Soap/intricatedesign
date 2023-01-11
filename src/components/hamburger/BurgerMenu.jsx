@@ -12,7 +12,7 @@ const BurgerMenu = () => {
     navigate("/");
   };
   return (
-    <div>
+    <>
       <Hamburger
         className="hamburger_button"
         toggled={isOpen}
@@ -57,7 +57,19 @@ const BurgerMenu = () => {
               offset={-60}
               onClick={handleClick}
             >
-              What we do
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeclass="active"
+              smooth={true}
+              spy={true}
+              to="projects"
+              offset={-60}
+              onClick={handleClick}
+            >
+              Projects
             </Link>
           </li>
           <li>
@@ -74,7 +86,7 @@ const BurgerMenu = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 
