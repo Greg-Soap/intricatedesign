@@ -7,8 +7,10 @@
   height: auto;
   background-color: $bg-off;
   padding: 112px 120px;
+  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
   @include tablet {
-    padding: 112px 16px;
+    padding: 4rem 1rem;
+    background-image: url("../../assets/images/BG\ Color\ Gradient.png");
   }
   .home_wrapper {
     display: flex;
@@ -23,72 +25,76 @@
       align-items: center;
       margin-left: 85px;
       gap: 16px;
+      vertical-align: middle;
       @include tablet {
         margin-left: 0;
       }
 
       h1 {
-        font-family: "Sora", sans-serif;
+        font-family: $SoraBold;
         font-style: normal;
         font-weight: 700;
-        font-size: 60px;
-        line-height: 82px;
-        text-align: center;
-        color: $text-heading;
-        margin: 0;
+        font-size: 96px;
+        line-height: 105.4%;
+        color: #333333;
+        .hero {
+          display: inline-block;
+          vertical-align: baseline;
+          @include tablet {
+            width: 70px;
+            height: 30px;
+          }
+        }
         @include tablet {
           font-weight: 800;
-          font-size: 36px;
+          font-size: 33px;
           line-height: 49px;
         }
       }
+      .links {
+        display: flex;
+        gap: 0 2rem;
+        align-items: center;
+        @include tablet {
+          gap: 0 1rem;
+        }
 
-      p {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #1a1a1a;
-      }
+        .home_btn {
+          text-transform: uppercase;
+          background: $Contact-btn;
+          color: $Black;
+          width: fit-content;
+          border-radius: 35px;
+          padding: 18px 32px;
+          letter-spacing: 2px;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 1.1rem;
+          border: none;
+          cursor: pointer;
+          @include tablet {
+            padding: 18px 15px;
+            font-size: 16px;
+          }
 
-      .home_btn {
-        border: none;
-        background-color: $Contact-btn;
-        padding: 18px 32px;
-
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 20px;
-        color: #ffffff;
-        margin-top: 16px;
-        :hover {
-          background-color: $Base-color-light;
+          :hover {
+            background-color: $Base-color-light;
+            cursor: pointer;
+          }
+        }
+        .learn {
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          color: #ff8900;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
           cursor: pointer;
         }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .home_container {
-  }
-  .home_textbox {
-    > h1 {
-    }
-
-    > p {
-      font-family: "Open Sans";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      text-align: center;
-      color: #1a1a1a;
     }
   }
 }
