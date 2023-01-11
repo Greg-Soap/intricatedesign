@@ -1,84 +1,132 @@
 @import "../../styles/Colors.scss";
 @import "../../styles/fonts";
 @import "../../styles/breakpoints";
-.hero_image {
-	width: 100%;
-	height: auto;
-	background-image: url("../../assets/images/heroimage.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
 
-.hero_textbox {
-	display: flex;
-	flex-direction: row;
-	padding-top: 220px;
+.hero_container {
+  height: auto;
+  background-color: $bg-off;
+  padding: 6rem;
+  @include tablet {
+    padding: 1.5rem;
+  }
+  .hero_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 140px;
+    @include tablet {
+      flex-direction: column;
+      gap: 70px;
+    }
 
-	> div {
-		display: flex;
-		width: auto;
-		gap: 50px;
-		padding: 15px 15px 15px 120px;
-		background-color: rgba(0, 0, 0, 0.53);
+    .hero_left_content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
 
-		> h1 {
-			display: flex;
-			flex-direction: column;
-			width: 66px;
-			height: 66px;
-			right: 149px;
-			top: calc(50% - 66px / 2);
-
-			font-family: "Open Sans";
-			font-style: normal;
-			font-weight: 600;
-			font-size: 40px;
-			text-align: center;
-
-			margin: 0;
-
-			color: #ffffff;
-			> span {
-				font-size: 18px;
-				margin: 0;
-			}
-		}
-	}
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 768px) {
-	.hero_image {
-		background-image: url("../../assets/images/heroimage_mobile.png");
-	}
-
-	.hero_textbox {
-		padding-top: 108px;
-
-		> div {
-			padding: 4px 4px 4px 16px;
-			gap: 16px;
-
-			> h1 {
-				width: 30px;
-				height: 35px;
-				right: 125px;
-				top: calc(50% - 35px / 2 + 0.5px);
-				font-family: "Open Sans";
-				font-style: normal;
-				font-weight: 600;
-				font-size: 16px;
-				line-height: 22px;
-				text-align: center;
-				color: #ffffff;
-
-				> span {
-					font-size: 8px;
-				}
-			}
-		}
-	}
+      .hero_header {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.065em;
+        text-transform: uppercase;
+        margin: 0;
+        color: $footer;
+        @include tablet {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .hero_title {
+        font-family: $SoraBold;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+        color: #333333;
+        @include tablet {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        span {
+          color: $links;
+        }
+      }
+      .hero_body {
+        p {
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: justify;
+          color: #666666;
+          .dot {
+            padding: 8px;
+            display: inline-block;
+            vertical-align: middle;
+            background: #ff8900;
+          }
+          @include tablet {
+            font-size: 18px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+    .hero_right_content {
+      flex: 1;
+      .wrapper {
+        width: 445px;
+        height: 570px;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        @include tablet {
+          width: 100%;
+          height: 100%;
+        }
+        .Badge {
+          width: 64px;
+          padding: 14px 24px;
+          right: -66px;
+          background: #191919;
+          border-radius: 35px;
+          position: absolute;
+          font-family: $SoraBold;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 40px;
+          text-align: center;
+          color: #fafafa;
+          @include tablet {
+            right: -15px;
+          }
+          span {
+            font-family: $Sora;
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+        :first-child {
+          top: 96px;
+        }
+        :nth-child(2) {
+          top: 188px;
+        }
+        :nth-child(3) {
+          top: 280px;
+        }
+      }
+    }
+  }
 }
