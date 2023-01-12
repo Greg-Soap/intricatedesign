@@ -10,8 +10,7 @@ const Home = () => {
       <div className="home_wrapper">
         <div className="home_textbox">
           <h1>
-            <img src={Hero1} alt="" className="hero" /> Lectus consequat massa
-            interd placerat platea isum sed.{" "}
+            <img src={Hero1} alt="" className="hero" /> INTRICATE DESIGN SPACE.{" "}
             <img src={Hero2} alt="" className="hero" />
           </h1>
           <div className="links">
