@@ -18,7 +18,7 @@ module.exports = {
   plugins: ["prettier"],
   rules: {
     "prefer-arrow-callback": ["warn", { allowNamedFunctions: true }],
-    "linebreak-style": ["warn", "unix"],
+    // "linebreak-style": ["warn", "unix"],
     "no-unused-vars": "warn",
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "react/react-in-jsx-scope": "error",
