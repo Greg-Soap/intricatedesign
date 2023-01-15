@@ -6,7 +6,7 @@
 .home_container {
   height: auto;
   background-color: $bg-off;
-  padding: 112px 70px;
+  padding: 6rem;
   background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
   @include tablet {
     padding: 4rem 1rem;
@@ -33,20 +33,16 @@
         margin-left: 0;
       }
       .wrapper {
-        display: flex;
-        align-items: baseline;
-
-        @include landscape {
-          align-items: center;
-        }
         h1 {
           font-family: $SoraBold;
           font-style: normal;
           font-weight: 700;
-          font-size: 5rem;
+          font-size: 5.2rem;
           letter-spacing: normal;
           line-height: 105.4%;
+          text-transform: capitalize;
           color: #333333;
+          text-align: left;
           @include tablet {
             font-weight: 800;
             font-size: 33px;
@@ -54,11 +50,17 @@
           }
           @include landscape {
             font-size: 2rem;
+            line-height: 2.5rem;
           }
         }
         .hero {
-          display: inline-block;
-          vertical-align: baseline;
+          display: inline;
+          vertical-align: bottom;
+          margin-bottom: 5px;
+          @include landscape {
+            width: 10%;
+          }
+
           @include tablet {
             width: 70px;
             height: 30px;
