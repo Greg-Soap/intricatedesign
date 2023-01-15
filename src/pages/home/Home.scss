@@ -6,11 +6,14 @@
 .home_container {
   height: auto;
   background-color: $bg-off;
-  padding: 112px 120px;
+  padding: 112px 70px;
   background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
   @include tablet {
     padding: 4rem 1rem;
     background-image: url("../../assets/images/BG\ Color\ Gradient.png");
+  }
+  @include landscape {
+    padding: 4rem 2rem;
   }
   .home_wrapper {
     display: flex;
@@ -23,20 +26,36 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 85px;
+      text-align: center;
       gap: 16px;
       vertical-align: middle;
       @include tablet {
         margin-left: 0;
       }
+      .wrapper {
+        display: flex;
+        align-items: baseline;
 
-      h1 {
-        font-family: $SoraBold;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 105.4%;
-        color: #333333;
+        @include landscape {
+          align-items: center;
+        }
+        h1 {
+          font-family: $SoraBold;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 5rem;
+          letter-spacing: normal;
+          line-height: 105.4%;
+          color: #333333;
+          @include tablet {
+            font-weight: 800;
+            font-size: 33px;
+            line-height: 49px;
+          }
+          @include landscape {
+            font-size: 2rem;
+          }
+        }
         .hero {
           display: inline-block;
           vertical-align: baseline;
@@ -45,12 +64,8 @@
             height: 30px;
           }
         }
-        @include tablet {
-          font-weight: 800;
-          font-size: 33px;
-          line-height: 49px;
-        }
       }
+
       .links {
         display: flex;
         gap: 0 2rem;

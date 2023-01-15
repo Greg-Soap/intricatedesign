@@ -34,29 +34,66 @@ const Contact = () => {
   return (
     <section id="contact" className="contact_container">
       <div className="contact_wrapper">
-        <div className="contact_left">
+        <div
+          className="contact_left"
+          data-aos="fade-right"
+          data-aos-delay="800"
+        >
           <div className="content_body">
-            <div className="contact_group">
+            <div
+              className="contact_group"
+              data-aos="fade-left"
+              data-aos-delay="800"
+            >
               <img src={Phone} alt="phone" />
               <h2>+234-8131913005</h2>
             </div>
-            <div className="contact_group">
+            <div
+              className="contact_group"
+              data-aos="fade-left"
+              data-aos-delay="1200"
+            >
               <img src={Mail} alt="mail" />
               <h2>intricatedesignspaces@gmail.com</h2>
             </div>
-            <div className="contact_group">
+            <div
+              className="contact_group"
+              data-aos="fade-left"
+              data-aos-delay="1600"
+            >
               <img src={Address} alt="address" />
               <h2>6a UBA road chervon drive bera estate</h2>
             </div>
           </div>
           <div className="content_social">
-            Our Socials: <img src={Facebook} alt="" />
-            <img src={Twitter} alt="" />
-            <img src={Instagram} alt="" />
+            Our Socials:{" "}
+            <img
+              src={Facebook}
+              alt=""
+              data-aos="fade-left"
+              data-aos-delay="1600"
+            />
+            <img
+              src={Twitter}
+              alt=""
+              data-aos="fade-left"
+              data-aos-delay="1800"
+            />
+            <img
+              src={Instagram}
+              alt=""
+              data-aos="fade-left"
+              data-aos-delay="2000"
+            />
           </div>
         </div>
 
-        <div className="contact_right">
+        <div
+          className="contact_right"
+          data-aos="fade-left"
+          data-aos-delay="800"
+          data-aos-offset="200"
+        >
           <h2 className="content_heading">GET IN TOUCH</h2>
           <h1 className="content_title">
             Fill the form to <span>reach out</span> to us.

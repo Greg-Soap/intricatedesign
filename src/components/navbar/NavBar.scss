@@ -22,7 +22,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
   font-family: Nunito Sans, sans-serif;
   @include landscape {
-    padding: 20px;
+    padding: 15px;
   }
   @include tablet {
     padding: 1rem 0.5rem;
@@ -33,6 +33,9 @@ a:hover {
     align-items: center;
     flex: 1;
     margin-left: 3%;
+    @include landscape {
+      margin-left: 0;
+    }
 
     .nav_title {
       font-family: Nunito Sans-Bold, sans-serif;
@@ -62,6 +65,9 @@ a:hover {
     flex: 3;
     display: flex;
     justify-content: space-around;
+    @include landscape {
+      margin-right: 0;
+    }
     .center {
       display: flex;
       justify-content: space-between;
@@ -77,11 +83,12 @@ a:hover {
       font-size: 18px;
       line-height: 25px;
       color: $linksInactive;
+      .active {
+        font-weight: bold;
+        color: $text-heading;
+      }
     }
-    .selected {
-      font-weight: bold;
-      color: $text-heading;
-    }
+
     .Contact_Link {
       border: 2px solid $Contact-btn;
       background-color: transparent;
@@ -92,7 +99,15 @@ a:hover {
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
-      color: #ff8900;
+      color: #ff8900 !important;
+      @include landscape {
+        padding: 8px 16px;
+        align-self: center;
+      }
+    }
+    .active {
+      font-weight: bold;
+      color: $text-heading;
     }
   }
 }

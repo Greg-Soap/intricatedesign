@@ -9,6 +9,9 @@
   @include tablet {
     padding: 1.5rem;
   }
+  @include landscape {
+    padding: 2.5rem;
+  }
   .contact_wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -18,11 +21,17 @@
       flex-direction: column-reverse;
       gap: 56px;
     }
+    @include landscape {
+      gap: 50px;
+    }
     .contact_left {
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 1rem;
+      @include landscape {
+        flex: 1;
+      }
 
       .content_body {
         display: flex;
@@ -40,10 +49,17 @@
           height: 460px;
           background-image: url("../../assets/images/Rectangle\ 92.png");
         }
+        @include landscape {
+          width: 100%;
+          height: 460px;
+        }
         :first-child {
           top: 214px;
           @include tablet {
             top: 150px;
+          }
+          @include landscape {
+            top: 105px;
           }
         }
         :nth-child(2) {
@@ -51,11 +67,17 @@
           @include tablet {
             top: 235px;
           }
+          @include landscape {
+            top: 205px;
+          }
         }
         :last-child {
           top: 392px;
           @include tablet {
             top: 315px;
+          }
+          @include landscape {
+            top: 305px;
           }
           border-radius: 65px;
         }
@@ -113,6 +135,9 @@
       @include tablet {
         width: 100%;
       }
+      @include landscape {
+        flex: 1;
+      }
       .content_heading {
         font-family: $Nunito;
         font-style: normal;
@@ -122,7 +147,7 @@
         letter-spacing: 0.065em;
         text-transform: uppercase;
         color: $footer;
-        @include tablet {
+        @include landscape {
           font-size: 16px;
           line-height: 22px;
         }
@@ -137,6 +162,10 @@
         @include tablet {
           font-size: 24px;
           line-height: 30px;
+        }
+        @include landscape {
+          font-size: 30px;
+          line-height: 40px;
         }
         span {
           color: $links;
@@ -164,7 +193,7 @@
           }
         }
         .form_label {
-          font-family: Sora, sans-serif;
+          font-family: $Sora;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -183,6 +212,7 @@
           display: inline-block;
           font-weight: 700;
           font-size: 1.1rem;
+          font-family: $Sora;
           border: none;
           cursor: pointer;
           margin-top: 1.2rem;
