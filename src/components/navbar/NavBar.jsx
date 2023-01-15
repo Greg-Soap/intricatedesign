@@ -39,7 +39,7 @@ const NavBar = () => {
         <div className="links_content">
           <div className="center">
             <Link
-              className={selectPage === "Home" ? "links selected" : "links"}
+              className={selectPage === "Home" ? "links " : "links"}
               smooth={true}
               spy={true}
               to="home"
@@ -49,33 +49,31 @@ const NavBar = () => {
               Home
             </Link>
             <Link
-              className={selectPage === "About Us" ? "links selected" : "links"}
+              className={selectPage === "About Us" ? "links " : "links"}
               smooth={true}
               spy={true}
               to="about"
-              offset={-80}
+              offset={-50}
               onClick={() => handleClick("About Us")}
             >
               About Us
             </Link>
             <Link
-              className={
-                selectPage === "Our Services" ? "links selected" : "links"
-              }
+              className={selectPage === "Our Services" ? "links " : "links"}
               smooth={true}
               spy={true}
               to="services"
-              offset={-80}
+              offset={-35}
               onClick={() => handleClick("Our Services")}
             >
               Services
             </Link>
             <Link
-              className={selectPage === "Projects" ? "links selected" : "links"}
+              className={selectPage === "Projects" ? "links " : "links"}
               smooth={true}
               spy={true}
-              to="services"
-              offset={-80}
+              to="projects"
+              offset={-20}
               onClick={() => handleClick("Projects")}
             >
               Projects
@@ -83,9 +81,7 @@ const NavBar = () => {
           </div>
           <Link
             className={
-              selectPage === "Contact Us"
-                ? "links Contact_Link selected"
-                : "links Contact_Link"
+              selectPage === "Contact Us" ? "Contact_Link " : "Contact_Link"
             }
             smooth={true}
             spy={true}

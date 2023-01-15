@@ -9,6 +9,9 @@
   @include tablet {
     padding: 1.5rem;
   }
+  @include landscape {
+    padding: 2.5rem;
+  }
   .about_wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -17,6 +20,9 @@
     @include tablet {
       flex-direction: column;
       gap: 70px;
+    }
+    @include landscape {
+      gap: 30px;
     }
 
     .about_left_content {
@@ -35,7 +41,7 @@
         text-transform: uppercase;
         margin: 0;
         color: $footer;
-        @include tablet {
+        @include landscape {
           font-size: 16px;
           line-height: 22px;
         }
@@ -51,6 +57,10 @@
         @include tablet {
           font-size: 24px;
           line-height: 30px;
+        }
+        @include landscape {
+          font-size: 30px;
+          line-height: 40px;
         }
         span {
           color: $links;
@@ -82,6 +92,13 @@
       flex: 1;
       .wrapper {
         position: relative;
+        img {
+          width: 100%;
+        }
+        @include landscape {
+          width: 100%;
+          height: 100%;
+        }
         .Badge {
           width: 101px;
           height: 101px;
