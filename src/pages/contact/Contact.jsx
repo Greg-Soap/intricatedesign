@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import { send } from "emailjs-com";
-import { Link } from "react-router-dom";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
 import Mail from "../../assets/images/envelope-open-text.svg";
 import Phone from "../../assets/images/phone.svg";
