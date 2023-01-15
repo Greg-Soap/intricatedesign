@@ -1,98 +1,119 @@
-@import '../../Colors.scss';
+@import "../../styles/Colors.scss";
+@import "../../styles/fonts";
+@import "../../styles/breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap");
 
 .home_container {
-    height: auto;
-    background-color: $bg-off;
-    padding: 112px 120px;
-}
-
-.home_wrapper {
+  height: auto;
+  background-color: $bg-off;
+  padding: 6rem;
+  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+  @include tablet {
+    padding: 4rem 1rem;
+    background-image: url("../../assets/images/BG\ Color\ Gradient.png");
+  }
+  @include landscape {
+    padding: 4rem 2rem;
+  }
+  .home_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.home_textbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 85px;
-    gap: 16px;
-
-    > h1 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 82px;
-        text-align: center;
-        color: $text-heading;
-        margin: 0;
-    }
-
-    > p {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        text-align: center;
-        color: #1A1A1A;
-    }
-
-    > .home_btn {
-        border: none;
-        background-color: $Contact-btn;
-        padding: 18px 32px;
-
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 20px;
-        color: #FFFFFF;
-        margin-top: 16px;
-    }
-
-    .home_btn:hover {
-        background-color: $Base-color-light;
-        cursor: pointer;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    
-}
-
-@media screen and (max-width: 768px) {
-    .home_container {
-        padding: 112px 16px;
-    }
     .home_textbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      vertical-align: middle;
+      @include tablet {
         margin-left: 0;
-
-        > h1 {
-            font-family: 'Open Sans';
-            font-style: normal;
+      }
+      .wrapper {
+        h1 {
+          font-family: $SoraBold;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 5.2rem;
+          letter-spacing: normal;
+          line-height: 105.4%;
+          text-transform: capitalize;
+          color: #333333;
+          text-align: left;
+          @include tablet {
             font-weight: 800;
-            font-size: 36px;
+            font-size: 33px;
             line-height: 49px;
-            text-align: center;
-            color: #333333;
+          }
+          @include landscape {
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+        }
+        .hero {
+          display: inline;
+          vertical-align: bottom;
+          margin-bottom: 5px;
+          @include landscape {
+            width: 10%;
+          }
+
+          @include tablet {
+            width: 70px;
+            height: 30px;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 0 2rem;
+        align-items: center;
+        @include tablet {
+          gap: 0 1rem;
         }
 
-        > p {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
+        .home_btn {
+          text-transform: uppercase;
+          background: $Contact-btn;
+          color: $Black;
+          width: fit-content;
+          border-radius: 35px;
+          padding: 18px 32px;
+          letter-spacing: 2px;
+          display: inline-block;
+          font-weight: 700;
+          font-size: 1.1rem;
+          border: none;
+          cursor: pointer;
+          @include tablet {
+            padding: 18px 15px;
             font-size: 16px;
-            line-height: 150%;
-            text-align: center;
-            color: #1A1A1A;
+          }
 
+          :hover {
+            background-color: $Base-color-light;
+            cursor: pointer;
+          }
         }
+        .learn {
+          > a {
+            font-family: $Nunito;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #ff8900;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
     }
+  }
 }
-
