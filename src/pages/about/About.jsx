@@ -10,27 +10,27 @@ const About = () => {
 
   return (
     <section id="about" className="about_container">
-      <div className="about_wrapper">
+      <div className="about_wrapper" data-aos="fade-up">
         <div className="about_left_content">
           <h2 className="about_header">
             WHY WE ARE THE BEST, THEN LIST VALUES
           </h2>
-          <h1 className="about_title">
+          <h1 className="about_title" data-aos-delay="800">
             We are <span>Intricate Design</span> spaces.
           </h1>
           <div className="about_body">
-            <p>
+            <p data-aos="fade-left" data-aos-delay="400">
               <span className="dot" /> Quality: We select products with
               excellent design, produced with long-lasting materials that
               satisfy the highest quality and sustainability standards.
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-delay="600">
               <span className="dot" /> Attention to detail: We make sure to pay
               great attention to detail; exploring art, crafts, and everything
               around us to deliver the greatest design.Manifesting our client’s
               individual style with each desk project.
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-delay="800">
               <span className="dot" /> Passion: We are a community of skilled,
               capable, and passionate professionals. We also hold the importance
               of empathy in high regard as individuals.

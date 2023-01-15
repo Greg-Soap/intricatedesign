@@ -193,7 +193,7 @@
           }
         }
         .form_label {
-          font-family: Sora, sans-serif;
+          font-family: $Sora;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
@@ -212,6 +212,7 @@
           display: inline-block;
           font-weight: 700;
           font-size: 1.1rem;
+          font-family: $Sora;
           border: none;
           cursor: pointer;
           margin-top: 1.2rem;
