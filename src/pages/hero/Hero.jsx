@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="hero_right_content">
           <div className="wrapper">
             <div className="Badge" data-aos="fade-left" data-aos-delay="400">
-              11+ <span>years</span>
+              3+ <span>years</span>
             </div>
             <div className="Badge" data-aos="fade-left" data-aos-delay="600">
               20+ <span>projects</span>

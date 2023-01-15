@@ -1,0 +1,84 @@
+@import "../../styles/Colors.scss";
+@import "../../styles/fonts";
+@import "../../styles/breakpoints";
+
+.Projects_container {
+  height: auto;
+  background-color: $bg-off;
+  padding: 6rem;
+  @include tablet {
+    padding: 1.5rem;
+  }
+  @include landscape {
+    padding: 3.5rem 2.5rem;
+  }
+  .Projects_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .Projects_header {
+      font-family: $Nunito;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.065em;
+      text-transform: uppercase;
+      margin: 0;
+      color: $footer;
+      @include landscape {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .Projects_title {
+      font-family: $SoraBold;
+      font-style: normal;
+      font-weight: 600;
+      margin: 0;
+      font-size: 40px;
+      line-height: 50px;
+      color: #333333;
+      @include tablet {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      @include landscape {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      span {
+        color: $links;
+      }
+    }
+  }
+  .Projects_content_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    @include tablet {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .Projects_content {
+      display: flex;
+      gap: 20px;
+      width: 50%;
+      object-fit: contain;
+      @include tablet {
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      img {
+        @include tablet {
+          width: 100%;
+        }
+        @include landscape {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

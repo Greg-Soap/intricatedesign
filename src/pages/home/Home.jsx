@@ -28,7 +28,9 @@ const Home = () => {
               Contact Us
             </Link>
             <div className="learn">
-              learn about us <img src={arrow} alt="" />
+              <Link to="about">
+                learn about us <img src={arrow} alt="" />
+              </Link>
             </div>
           </div>
         </div>
