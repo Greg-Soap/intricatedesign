@@ -1,11 +1,13 @@
 import React from "react";
 import "./ReviewCard.scss";
 
-const ReviewCard = ({ items, classContainer, classWrapper  }) => {
+// eslint-disable-next-line react/prop-types
+const ReviewCard = ({ items, classContainer, classWrapper }) => {
+  // eslint-disable-next-line react/prop-types
   const { image, name, review, id } = items;
 
   return (
-    <article className={classContainer ? classContainer : "Review_Container"}> 
+    <article className={classContainer ? classContainer : "Review_Container"}>
       <div key={id} className={classWrapper ? classWrapper : "Review_Wrapper"}>
         <div className="Review_Top">
           <div className="Review_Image">
@@ -25,6 +27,6 @@ ReviewCard.props = {
   items: {},
   classContainer: "Review_Container",
   classWrapper: "Review_Wrapper",
-}
+};
 
 export default ReviewCard;

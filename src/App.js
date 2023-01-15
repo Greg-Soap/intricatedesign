@@ -4,15 +4,15 @@ import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
 
 function App() {
-	return (
-		<div className="App">
-			<NavBar />
+  return (
+    <div className="App">
+      <NavBar />
 
-			<Outlet />
+      <Outlet />
 
-			<Footer />
-		</div>
-	);
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
