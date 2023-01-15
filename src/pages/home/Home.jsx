@@ -11,9 +11,11 @@ const Home = () => {
       <div className="home_wrapper">
         <div className="home_textbox">
           <div className="wrapper" data-aos="fade-up">
-            <img src={Hero1} alt="" className="hero" />
-            <h1>INTRICATE DESIGN SPACE. </h1>
-            <img src={Hero2} alt="" className="hero" />
+            <h1>
+              <img src={Hero1} alt="" className="hero" />
+              Intricate Design Space, A creative interior design company{" "}
+              <img src={Hero2} alt="" className="hero" />
+            </h1>
           </div>
           <div className="links" data-aos="fade-up" data-aos-delay="200">
             <Link
