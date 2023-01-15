@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Home from "./home/Home";
 import Hero from "./hero/Hero";
 import About from "./about/About";
-import Goals from "./goals/Goals";
+import Projects from "./projects/Projects";
 import Services from "./services/Services";
 import Contact from "./contact/Contact";
 import Aos from "aos";
@@ -20,8 +20,8 @@ const MainPage = () => {
       <Home />
       <Hero />
       <About />
-      <Goals />
       <Services />
+      <Projects />
       <Contact />
     </div>
   );

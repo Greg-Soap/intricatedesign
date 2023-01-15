@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import { send } from "emailjs-com";
-import "./Contact.scss";
+import { Link } from "react-router-dom";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
 import Mail from "../../assets/images/envelope-open-text.svg";
 import Phone from "../../assets/images/phone.svg";
@@ -9,6 +9,7 @@ import Address from "../../assets/images/map-pin.svg";
 import Facebook from "../../assets/images/Facebook.png";
 import Twitter from "../../assets/images/Twitter.png";
 import Instagram from "../../assets/images/Instagram.png";
+import "./Contact.scss";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -67,24 +68,30 @@ const Contact = () => {
           </div>
           <div className="content_social">
             Our Socials:{" "}
-            <img
-              src={Facebook}
-              alt=""
-              data-aos="fade-left"
-              data-aos-delay="1600"
-            />
-            <img
-              src={Twitter}
-              alt=""
-              data-aos="fade-left"
-              data-aos-delay="1800"
-            />
-            <img
-              src={Instagram}
-              alt=""
-              data-aos="fade-left"
-              data-aos-delay="2000"
-            />
+            <a href="https://www.facebook.com/IntricateDesignSpaces">
+              <img
+                src={Facebook}
+                alt=""
+                data-aos="fade-left"
+                data-aos-delay="1600"
+              />
+            </a>
+            <a href="https://twitter.com/intricatedesigs">
+              <img
+                src={Twitter}
+                alt=""
+                data-aos="fade-left"
+                data-aos-delay="1800"
+              />
+            </a>
+            <a href="https://www.instagram.com/intricatedesignspaces/">
+              <img
+                src={Instagram}
+                alt=""
+                data-aos="fade-left"
+                data-aos-delay="2000"
+              />
+            </a>
           </div>
         </div>
 

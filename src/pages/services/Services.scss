@@ -5,17 +5,19 @@
 .services_container {
   height: auto;
   background-color: $bg-off;
-  padding: 6rem;
-  @include tablet {
-    padding: 1.5rem;
-  }
-  @include landscape {
-    padding: 3.5rem 2.5rem;
-  }
+
   .services_title_wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 6rem;
+    padding-bottom: 0rem;
+    @include tablet {
+      padding: 1.5rem;
+    }
+    @include landscape {
+      padding: 1rem 2.5rem;
+    }
     .services_header {
       font-family: $Nunito;
       font-style: normal;
@@ -55,29 +57,53 @@
   .services_content_wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 50px;
     @include tablet {
       flex-direction: column;
-      flex-wrap: nowrap;
+      margin-top: 0;
+      padding: 1rem;
+      gap: 24px;
+    }
+    @include landscape {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     }
 
     .services_content {
       display: flex;
-      gap: 20px;
-      width: 50%;
-      object-fit: contain;
+      flex-direction: column;
+      padding: 2rem;
+      border: 1px solid #d9d9d9;
+      @include landscape {
+        width: 40%;
+      }
       @include tablet {
-        margin-bottom: 1rem;
-        width: 100%;
+        padding: 1rem;
+        width: auto;
+      }
+      .title {
+        font-family: $Sora;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #5a5a5a;
+        margin-bottom: 65px;
       }
       img {
-        @include tablet {
-          width: 100%;
-        }
-        @include landscape {
-          width: 100%;
-        }
+        width: 96px;
+        object-fit: contain;
+      }
+      .desc {
+        font-family: $Nunito;
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #666666;
       }
     }
   }

@@ -12,7 +12,7 @@ const Home = () => {
         <div className="home_textbox">
           <div className="wrapper" data-aos="fade-up">
             <img src={Hero1} alt="" className="hero" />
-            <h1>INTRICATE DESIGN SPACE. </h1>
+            <h1>INTRICATE DESIGN SPACE A creative interior design company</h1>
             <img src={Hero2} alt="" className="hero" />
           </div>
           <div className="links" data-aos="fade-up" data-aos-delay="200">
