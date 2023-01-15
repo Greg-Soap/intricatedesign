@@ -15,6 +15,9 @@
     @include tablet {
       padding: 1.5rem;
     }
+    @include landscape {
+      padding: 1rem 2.5rem;
+    }
     .goals_header {
       font-family: $Nunito;
       font-style: normal;
@@ -25,7 +28,7 @@
       text-transform: uppercase;
       margin: 0;
       color: $footer;
-      @include tablet {
+      @include landscape {
         font-size: 16px;
         line-height: 22px;
       }
@@ -42,6 +45,10 @@
         font-size: 24px;
         line-height: 30px;
       }
+      @include landscape {
+        font-size: 30px;
+        line-height: 40px;
+      }
       span {
         color: $links;
       }
@@ -57,14 +64,24 @@
       padding: 1rem;
       gap: 24px;
     }
+    @include landscape {
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
 
     .goals_content {
       display: flex;
       flex-direction: column;
       padding: 2rem;
       border: 1px solid #d9d9d9;
+      @include landscape {
+        width: 40%;
+      }
       @include tablet {
         padding: 1rem;
+        width: auto;
       }
       .title {
         font-family: $Sora;

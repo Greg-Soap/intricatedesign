@@ -9,11 +9,11 @@ const Home = () => {
     <section id="home" className="home_container">
       <div className="home_wrapper">
         <div className="home_textbox">
-          <h1>
-            <img src={Hero1} alt="" className="hero" /> Lectus consequat massa
-            interd placerat platea isum sed.{" "}
+          <div className="wrapper">
+            <img src={Hero1} alt="" className="hero" />
+            <h1>INTRICATE DESIGN SPACE. </h1>
             <img src={Hero2} alt="" className="hero" />
-          </h1>
+          </div>
           <div className="links">
             <Link
               className="home_btn"
