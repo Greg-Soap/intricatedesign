@@ -4,6 +4,7 @@ import Icon1 from "../../assets/images/Desk icon(1).png";
 import Icon2 from "../../assets/images/Building icon(1).png";
 import Icon3 from "../../assets/images/Construction helmet icon.png";
 import Icon4 from "../../assets/images/Couch icon.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -16,7 +17,8 @@ const Services = () => {
       </div>
 
       <div className="services_content_wrapper">
-        <div
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="200"
@@ -29,8 +31,9 @@ const Services = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur veritatis illum ex.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="400"
@@ -43,8 +46,9 @@ const Services = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur veritatis illum ex.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="600"
@@ -57,8 +61,9 @@ const Services = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur veritatis illum ex.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="800"
@@ -71,7 +76,7 @@ const Services = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur veritatis illum ex.
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

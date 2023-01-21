@@ -4,12 +4,12 @@
 .s_container {
   height: auto;
   background-color: $bg-off;
+  border-bottom: 1px solid #cccccc;
   .wrapper {
     display: flex;
     flex-direction: column;
     gap: 70px 0px;
     padding: 6rem;
-    padding-bottom: 0rem;
     @include tablet {
       padding: 1.5rem;
     }
@@ -93,6 +93,47 @@
           line-height: 27px;
         }
       }
+    }
+  }
+}
+.h_container {
+  height: auto;
+  background-color: $bg-off;
+  border-bottom: 1px solid #cccccc;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+    @include tablet {
+      padding: 1.5rem;
+    }
+    @include landscape {
+      padding: 1rem 2.5rem;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-family: $Sora;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 105.4%;
+        color: #333333;
+      }
+      .desc {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        width: 80%;
+        color: #666666;
+      }
+    }
+    .right {
+      display: flex;
+      gap: 20px;
     }
   }
 }
