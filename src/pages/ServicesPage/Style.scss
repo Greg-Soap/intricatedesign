@@ -137,3 +137,72 @@
     }
   }
 }
+
+.ServiceNav {
+  position: fixed;
+  display: flex;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px 55px;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 23px;
+  transition: all 0.3s ease-in-out;
+  font-family: Nunito Sans, sans-serif;
+  @include landscape {
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 1rem 0.5rem;
+    background-color: #262626 !important;
+  }
+  .nav_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 3%;
+    font-family: $Nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #afafaf;
+    @include landscape {
+      margin-left: 0;
+    }
+  }
+  .links_content {
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-around;
+    .Contact_Link {
+      border: 2px solid $Contact-btn;
+      background-color: transparent;
+      border-radius: 35px;
+      padding: 12px 24px;
+      font-family: Nunito Sans-Bold, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ff8900 !important;
+      cursor: pointer;
+      @include landscape {
+        padding: 8px 16px;
+        align-self: center;
+      }
+    }
+    @include landscape {
+      margin-right: 0;
+    }
+  }
+}
+.colorChange {
+  background-color: $bg-off;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}

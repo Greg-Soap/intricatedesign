@@ -3,6 +3,8 @@ import { Content } from "./data";
 import "./Style.scss";
 import Hero from "./Hero";
 import Contact from "../contact/Contact";
+import Nav from "./Nav";
+import Footer from "../../components/footer/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -15,6 +17,7 @@ const Services = () => {
   }, []);
   return (
     <>
+      <Nav />
       <Hero />
       <section className="s_container">
         {Content.map((c) => {
@@ -51,6 +54,7 @@ const Services = () => {
         })}
       </section>
       <Contact />
+      <Footer />
     </>
   );
 };
