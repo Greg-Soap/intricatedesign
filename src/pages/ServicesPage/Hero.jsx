@@ -9,10 +9,10 @@ const Hero = () => {
     <section className="h_container">
       <div className="wrapper">
         <div className="left">
-          <h1 className="title">
+          <h1 className="title" data-aos="fade-up">
             Faucibus ultricies ullamcorper mauris null services ellus.
           </h1>
-          <div className="desc">
+          <div className="desc" data-aos="fade-up" data-aos-delay="200">
             Sed purus sit ipsum convallis. Bibendum magna lectus est mi
             fringilla euismod enim. Consectetur a lacinia consectetur ut.
             Facilisis malesuada et non id diam. Iaculis sed felis eu lacus
@@ -21,9 +21,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="right">
-          <img src={H1} alt="" />
-          <img src={H2} alt="" />
-          <img src={H3} alt="" />
+          <img src={H1} alt="" data-aos="fade-left" />
+          <img src={H2} alt="" data-aos="fade-left" data-aos-delay="200" />
+          <img src={H3} alt="" data-aos="fade-left" data-aos-delay="400" />
         </div>
       </div>
     </section>
