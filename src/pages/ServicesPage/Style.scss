@@ -10,11 +10,10 @@
     flex-direction: column;
     gap: 70px 0px;
     padding: 6rem;
-    @include tablet {
-      padding: 1.5rem;
-    }
+
     @include landscape {
-      padding: 1rem 2.5rem;
+      padding: 1.5rem;
+      gap: 10px 0px;
     }
     .title_wrapper {
       display: flex;
@@ -61,11 +60,20 @@
         line-height: 22px;
         width: 50%;
         color: #666666;
+        @include tablet {
+          width: 100%;
+        }
       }
     }
     .content_wrapper {
       display: flex;
       gap: 20px;
+      @include tablet {
+        flex-direction: column;
+      }
+      @include landscape {
+        gap: 5px;
+      }
       .content {
         height: 100%;
         flex: 1;
@@ -100,15 +108,17 @@
   height: auto;
   background-color: $bg-off;
   border-bottom: 1px solid #cccccc;
+  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
   .wrapper {
     display: flex;
     justify-content: space-between;
     padding: 6rem;
     @include tablet {
-      padding: 1.5rem;
+      padding: 4rem 1rem;
+      background-image: url("../../assets/images/BG\ Color\ Gradient.png");
     }
     @include landscape {
-      padding: 1rem 2.5rem;
+      padding: 4rem 2rem;
     }
     .left {
       display: flex;
@@ -120,6 +130,14 @@
         font-size: 48px;
         line-height: 105.4%;
         color: #333333;
+        @include tablet {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        @include landscape {
+          font-size: 30px;
+          line-height: 40px;
+        }
       }
       .desc {
         font-family: $Nunito;
@@ -129,11 +147,16 @@
         line-height: 22px;
         width: 80%;
         color: #666666;
+        @include landscape {
+        }
       }
     }
     .right {
       display: flex;
       gap: 20px;
+      @include landscape {
+        display: none;
+      }
     }
   }
 }
