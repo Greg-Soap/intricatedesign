@@ -7,10 +7,11 @@
   height: auto;
   background-color: $bg-off;
   padding: 6rem;
-  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+  // background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+
   @include tablet {
     padding: 4rem 1rem;
-    background-image: url("../../assets/images/BG\ Color\ Gradient.png");
+    // background-image: url("../../assets/images/BG\ Color\ Gradient.png");
   }
   @include landscape {
     padding: 4rem 2rem;
