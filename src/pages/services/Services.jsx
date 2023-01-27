@@ -23,13 +23,11 @@ const Services = () => {
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Completion of a carcass structure</div>
           <img src={Icon3} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            At our interior design firm, we understand that the foundation of
+            any good design is a solid structure.
           </div>
         </Link>
         <Link
@@ -38,13 +36,10 @@ const Services = () => {
           data-aos="fade-left"
           data-aos-delay="400"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Furniture Refurbishing and set</div>
           <img src={Icon4} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We offer a comprehensive furniture refurbishing and set service.
           </div>
         </Link>
         <Link
@@ -53,13 +48,11 @@ const Services = () => {
           data-aos="fade-left"
           data-aos-delay="600"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Building remodeling and redesign</div>
           <img src={Icon2} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We provide building remodeling and redesign services to help you
+            create a functional and aesthetically pleasing space.
           </div>
         </Link>
         <Link
@@ -68,13 +61,11 @@ const Services = () => {
           data-aos="fade-left"
           data-aos-delay="800"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Office Furnishing and decor</div>
           <img src={Icon1} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We specialize in helping businesses create workspaces that inspire
+            creativity, productivity and a sense of well-being.
           </div>
         </Link>
       </div>

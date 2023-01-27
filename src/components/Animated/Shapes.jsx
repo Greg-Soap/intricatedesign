@@ -4,8 +4,8 @@ import "./Shapes.scss";
 const Shapes = () => {
   return (
     <>
-      <div className="circle" />
-      <div className="circle_right" />
+      {/* <div className="circle" /> */}
+      {/* <div className="circle_right" /> */}
     </>
   );
 };
