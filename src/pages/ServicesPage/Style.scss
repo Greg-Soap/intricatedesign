@@ -1,0 +1,231 @@
+@import "../../styles/Colors.scss";
+@import "../../styles/fonts";
+@import "../../styles/breakpoints";
+.s_container {
+  height: auto;
+  background-color: $bg-off;
+  border-bottom: 1px solid #cccccc;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 70px 0px;
+    padding: 6rem;
+
+    @include landscape {
+      padding: 1.5rem;
+      gap: 10px 0px;
+    }
+    .title_wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .title {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.065em;
+        text-transform: uppercase;
+        margin: 0;
+        color: $links;
+        @include landscape {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .header {
+        font-family: $SoraBold;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+        color: #333333;
+        @include tablet {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        @include landscape {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      .desc {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        width: 50%;
+        color: #666666;
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+    .content_wrapper {
+      display: flex;
+      gap: 20px;
+      @include tablet {
+        flex-direction: column;
+      }
+      @include landscape {
+        gap: 5px;
+      }
+      .content {
+        height: 100%;
+        flex: 1;
+        position: relative;
+        border-radius: 50px;
+        overflow: auto;
+        border: 10px solid rgba(255, 255, 255, 0.3);
+        img {
+          width: 100%;
+        }
+        .text {
+          height: 12%;
+          padding: 2rem;
+          padding-top: 1rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #191919;
+          color: white;
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
+.h_container {
+  height: auto;
+  background-color: $bg-off;
+  border-bottom: 1px solid #cccccc;
+  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+    @include tablet {
+      padding: 4rem 1rem;
+      background-image: url("../../assets/images/BG\ Color\ Gradient.png");
+    }
+    @include landscape {
+      padding: 4rem 2rem;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-family: $Sora;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 105.4%;
+        color: #333333;
+        @include tablet {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        @include landscape {
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+      .desc {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        width: 80%;
+        color: #666666;
+        @include landscape {
+        }
+      }
+    }
+    .right {
+      display: flex;
+      gap: 20px;
+      @include landscape {
+        display: none;
+      }
+    }
+  }
+}
+
+.ServiceNav {
+  position: fixed;
+  display: flex;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  justify-content: space-between;
+  padding: 20px 55px;
+  align-items: center;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 23px;
+  transition: all 0.3s ease-in-out;
+  font-family: Nunito Sans, sans-serif;
+  @include landscape {
+    padding: 15px;
+  }
+  @include tablet {
+    padding: 1rem 0.5rem;
+    background-color: #262626 !important;
+  }
+  .nav_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 3%;
+    font-family: $Nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #afafaf;
+    @include landscape {
+      margin-left: 0;
+    }
+  }
+  .links_content {
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-around;
+    .Contact_Link {
+      border: 2px solid $Contact-btn;
+      background-color: transparent;
+      border-radius: 35px;
+      padding: 12px 24px;
+      font-family: Nunito Sans-Bold, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ff8900 !important;
+      cursor: pointer;
+      @include landscape {
+        padding: 8px 16px;
+        align-self: center;
+      }
+    }
+    @include landscape {
+      margin-right: 0;
+    }
+  }
+}
+.colorChange {
+  background-color: $bg-off;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+}

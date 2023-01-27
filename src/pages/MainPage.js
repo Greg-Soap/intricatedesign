@@ -16,14 +16,14 @@ const MainPage = () => {
     });
   }, []);
   return (
-    <div style={{ overflow: "hidden" }}>
+    <>
       <Home />
       <Hero />
       <About />
       <Services />
       <Projects />
       <Contact />
-    </div>
+    </>
   );
 };
 
