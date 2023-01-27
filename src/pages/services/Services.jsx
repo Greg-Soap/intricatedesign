@@ -4,6 +4,7 @@ import Icon1 from "../../assets/images/Desk icon(1).png";
 import Icon2 from "../../assets/images/Building icon(1).png";
 import Icon3 from "../../assets/images/Construction helmet icon.png";
 import Icon4 from "../../assets/images/Couch icon.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -16,62 +17,57 @@ const Services = () => {
       </div>
 
       <div className="services_content_wrapper">
-        <div
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Completion of a carcass structure</div>
           <img src={Icon3} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            At our interior design firm, we understand that the foundation of
+            any good design is a solid structure.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="400"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Furniture Refurbishing and set</div>
           <img src={Icon4} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We offer a comprehensive furniture refurbishing and set service.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="600"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Building remodeling and redesign</div>
           <img src={Icon2} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We provide building remodeling and redesign services to help you
+            create a functional and aesthetically pleasing space.
           </div>
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/Services"
           className="services_content"
           data-aos="fade-left"
           data-aos-delay="800"
         >
-          <div className="title">
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
-          </div>
+          <div className="title">Office Furnishing and decor</div>
           <img src={Icon1} alt="" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We specialize in helping businesses create workspaces that inspire
+            creativity, productivity and a sense of well-being.
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

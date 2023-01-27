@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
 import MainPage from "../pages/MainPage";
+import ServicePage from "../pages/ServicesPage/Services";
 
 // Define the navigation configuration for the application
 const NavConfig = () => {
@@ -13,6 +14,7 @@ const NavConfig = () => {
         {/* The main route renders the MainPage component */}
         <Route path="/" element={<MainPage />} />
       </Route>
+      <Route path="/Services" element={<ServicePage />} />
     </Routes>
   );
 };

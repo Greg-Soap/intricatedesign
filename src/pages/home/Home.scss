@@ -8,6 +8,7 @@
   background-color: $bg-off;
   padding: 6rem;
   background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+
   @include tablet {
     padding: 4rem 1rem;
     background-image: url("../../assets/images/BG\ Color\ Gradient.png");

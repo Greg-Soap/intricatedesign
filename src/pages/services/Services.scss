@@ -2,6 +2,10 @@
 @import "../../styles/fonts";
 @import "../../styles/breakpoints";
 
+a {
+  text-decoration: none;
+}
+
 .services_container {
   height: auto;
   background-color: $bg-off;
@@ -72,6 +76,7 @@
     }
 
     .services_content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       padding: 2rem;
@@ -95,6 +100,9 @@
       img {
         width: 96px;
         object-fit: contain;
+      }
+      :hover {
+        transform: scale(1.1);
       }
       .desc {
         font-family: $Nunito;
