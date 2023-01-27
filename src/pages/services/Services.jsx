@@ -4,6 +4,7 @@ import Icon1 from "../../assets/images/Desk icon(1).png";
 import Icon2 from "../../assets/images/Building icon(1).png";
 import Icon3 from "../../assets/images/Construction helmet icon.png";
 import Icon4 from "../../assets/images/Couch icon.png";
+import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -29,6 +30,7 @@ const Services = () => {
             At our interior design firm, we understand that the foundation of
             any good design is a solid structure.
           </div>
+          <HiOutlineArrowSmRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -41,6 +43,7 @@ const Services = () => {
           <div className="desc">
             We offer a comprehensive furniture refurbishing and set service.
           </div>
+          <HiOutlineArrowSmRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -54,6 +57,7 @@ const Services = () => {
             We provide building remodeling and redesign services to help you
             create a functional and aesthetically pleasing space.
           </div>
+          <HiOutlineArrowSmRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -67,6 +71,7 @@ const Services = () => {
             We specialize in helping businesses create workspaces that inspire
             creativity, productivity and a sense of well-being.
           </div>
+          <HiOutlineArrowSmRight className="arrow_link" />
         </Link>
       </div>
     </section>
