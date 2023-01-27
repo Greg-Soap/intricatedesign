@@ -88,6 +88,12 @@ a {
         padding: 1rem;
         width: auto;
       }
+      .arrow_link {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 100;
+        display: none;
+      }
       .title {
         font-family: $Sora;
         font-style: normal;
