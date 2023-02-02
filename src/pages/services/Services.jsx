@@ -1,10 +1,6 @@
 import React from "react";
 import "./Services.scss";
-import Icon1 from "../../assets/images/Desk icon(1).png";
-import Icon2 from "../../assets/images/Building icon(1).png";
-import Icon3 from "../../assets/images/Construction helmet icon.png";
-import Icon4 from "../../assets/images/Couch icon.png";
-import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -25,12 +21,13 @@ const Services = () => {
           data-aos-delay="200"
         >
           <div className="title">Completion of a carcass structure</div>
-          <img src={Icon3} alt="" />
+          <div className="box1" />
+
           <div className="desc">
             At our interior design firm, we understand that the foundation of
             any good design is a solid structure.
           </div>
-          <HiOutlineArrowSmRight className="arrow_link" />
+          <HiArrowNarrowRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -39,11 +36,11 @@ const Services = () => {
           data-aos-delay="400"
         >
           <div className="title">Furniture Refurbishing and set</div>
-          <img src={Icon4} alt="" />
+          <div className="box2" />
           <div className="desc">
             We offer a comprehensive furniture refurbishing and set service.
           </div>
-          <HiOutlineArrowSmRight className="arrow_link" />
+          <HiArrowNarrowRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -52,12 +49,12 @@ const Services = () => {
           data-aos-delay="600"
         >
           <div className="title">Building remodeling and redesign</div>
-          <img src={Icon2} alt="" />
+          <div className="box3" />
           <div className="desc">
             We provide building remodeling and redesign services to help you
             create a functional and aesthetically pleasing space.
           </div>
-          <HiOutlineArrowSmRight className="arrow_link" />
+          <HiArrowNarrowRight className="arrow_link" />
         </Link>
         <Link
           to="/Services"
@@ -66,12 +63,12 @@ const Services = () => {
           data-aos-delay="800"
         >
           <div className="title">Office Furnishing and decor</div>
-          <img src={Icon1} alt="" />
+          <div className="box4" />
           <div className="desc">
             We specialize in helping businesses create workspaces that inspire
             creativity, productivity and a sense of well-being.
           </div>
-          <HiOutlineArrowSmRight className="arrow_link" />
+          <HiArrowNarrowRight className="arrow_link" />
         </Link>
       </div>
     </section>
