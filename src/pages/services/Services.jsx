@@ -22,9 +22,10 @@ const Services = () => {
         >
           <div className="title">Completion of a carcass structure</div>
           <div className="box1" />
+
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            At our interior design firm, we understand that the foundation of
+            any good design is a solid structure.
           </div>
           <HiArrowNarrowRight className="arrow_link" />
         </Link>
@@ -37,8 +38,7 @@ const Services = () => {
           <div className="title">Furniture Refurbishing and set</div>
           <div className="box2" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We offer a comprehensive furniture refurbishing and set service.
           </div>
           <HiArrowNarrowRight className="arrow_link" />
         </Link>
@@ -51,8 +51,8 @@ const Services = () => {
           <div className="title">Building remodeling and redesign</div>
           <div className="box3" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We provide building remodeling and redesign services to help you
+            create a functional and aesthetically pleasing space.
           </div>
           <HiArrowNarrowRight className="arrow_link" />
         </Link>
@@ -65,8 +65,8 @@ const Services = () => {
           <div className="title">Office Furnishing and decor</div>
           <div className="box4" />
           <div className="desc">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur veritatis illum ex.
+            We specialize in helping businesses create workspaces that inspire
+            creativity, productivity and a sense of well-being.
           </div>
           <HiArrowNarrowRight className="arrow_link" />
         </Link>

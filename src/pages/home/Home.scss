@@ -7,11 +7,11 @@
   height: auto;
   background-color: $bg-off;
   padding: 6rem;
-  // background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
+  background-image: url("../../assets/images/BG\ Color\ Gradient\(1\).png");
 
   @include tablet {
     padding: 4rem 1rem;
-    // background-image: url("../../assets/images/BG\ Color\ Gradient.png");
+    background-image: url("../../assets/images/BG\ Color\ Gradient.png");
   }
   @include landscape {
     padding: 4rem 2rem;
@@ -43,7 +43,7 @@
           line-height: 105.4%;
           text-transform: capitalize;
           color: #333333;
-          text-align: left;
+          text-align: center;
           @include tablet {
             font-weight: 800;
             font-size: 33px;
