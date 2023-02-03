@@ -79,8 +79,10 @@ a {
       flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       padding: 2rem;
       border: 1px solid #d9d9d9;
+
       @include landscape {
         width: 40%;
       }
@@ -89,8 +91,8 @@ a {
         width: auto;
       }
       .arrow_link {
-        color: black;
-        font-size: 1.5rem;
+        color: white;
+        font-size: 2.5rem;
         font-weight: 100;
         display: none;
       }
@@ -103,13 +105,29 @@ a {
         color: #5a5a5a;
         margin-bottom: 65px;
       }
-      img {
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
         width: 96px;
+        height: 96px;
         object-fit: contain;
+        background-repeat: no-repeat;
       }
-      :hover {
-        transform: scale(1.1);
+      .box1 {
+        background-image: url("../../assets/images/Construction\ helmet\ icon.svg");
       }
+
+      .box2 {
+        background-image: url("../../assets/images/Couch\ icon.svg");
+      }
+      .box3 {
+        background-image: url("../../assets/images/Building\ icon.svg");
+      }
+      .box4 {
+        background-image: url("../../assets/images/Desk\ icon.svg");
+      }
+
       .desc {
         font-family: $Nunito;
         margin-top: 16px;
@@ -120,5 +138,27 @@ a {
         color: #666666;
       }
     }
+  }
+}
+.services_content:hover {
+  background-color: black;
+  .title,
+  .desc {
+    color: white !important;
+  }
+  .arrow_link {
+    display: block !important;
+  }
+  .box1 {
+    background-image: url("../../assets/images/Construction\ helmet\ icon\ yellow.svg") !important;
+  }
+  .box2 {
+    background-image: url("../../assets/images/Couch\ icon\ yellow.svg") !important;
+  }
+  .box3 {
+    background-image: url("../../assets/images/Building\ icon\ yellow.svg") !important;
+  }
+  .box4 {
+    background-image: url("../../assets/images/Desk\ icon\ yellow.svg") !important;
   }
 }

@@ -4,6 +4,7 @@ import Project1 from "../../assets/images/Rectangle 59.png";
 import Project2 from "../../assets/images/Rectangle 63.png";
 import Project3 from "../../assets/images/Rectangle 64.png";
 import Project4 from "../../assets/images/Rectangle 65.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -21,28 +22,36 @@ const Projects = () => {
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          <img src={Project1} alt="" />
+          <Link to="/Projects">
+            <img src={Project1} alt="" />
+          </Link>
         </div>
         <div
           className="Projects_content"
           data-aos="fade-left"
           data-aos-delay="400"
         >
-          <img src={Project2} alt="" />
+          <Link to="/Projects">
+            <img src={Project2} alt="" />
+          </Link>
         </div>
         <div
           className="Projects_content"
           data-aos="fade-right"
           data-aos-delay="800"
         >
-          <img src={Project3} alt="" />
+          <Link to="/Projects">
+            <img src={Project3} alt="" />
+          </Link>
         </div>
         <div
           className="Projects_content"
           data-aos="fade-left"
           data-aos-delay="800"
         >
-          <img src={Project4} alt="" />
+          <Link to="/Projects">
+            <img src={Project4} alt="" />
+          </Link>
         </div>
       </div>
     </section>
