@@ -71,6 +71,7 @@
         margin-bottom: 1rem;
         width: 100%;
       }
+
       img {
         @include tablet {
           width: 100%;
@@ -78,15 +79,16 @@
         @include landscape {
           width: 100%;
         }
-      }
-      img:hover {
-        background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.5)
-        );
-        border: 10px solid rgba(255, 255, 255, 0.3);
-        border-radius: 200px;
+        &:hover {
+          filter: brightness(0.5);
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          );
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          border-radius: 200px;
+        }
       }
     }
   }
