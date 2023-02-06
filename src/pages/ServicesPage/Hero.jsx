@@ -1,8 +1,8 @@
 import React from "react";
 import "./Style.scss";
-import H1 from "../../assets/images/Rectangle 100.png";
-import H2 from "../../assets/images/Rectangle 101.png";
-import H3 from "../../assets/images/Rectangle 99.png";
+import H1 from "../../assets/images/servicepageheader01.png";
+import H2 from "../../assets/images/servicepageheader02.png";
+import H3 from "../../assets/images/servicepageheader03.png";
 
 const Hero = () => {
   return (
