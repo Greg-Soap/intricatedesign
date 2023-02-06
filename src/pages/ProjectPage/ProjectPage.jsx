@@ -4,10 +4,12 @@ import Nav from "../ServicesPage/Nav";
 import Footer from "../../components/footer/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import one from "../../assets/images/Image(2).png";
-import two from "../../assets/images/Image(3).png";
-import three from "../../assets/images/Image(4).png";
-import four from "../../assets/images/Image(5).png";
+import one from "../../assets/images/ProjectPage01.png";
+import two from "../../assets/images/ProjectPage02.png";
+import three from "../../assets/images/ProjectPage03.png";
+import four from "../../assets/images/ProjectPage06.png";
+import five from "../../assets/images/ProjectPage05.png";
+import six from "../../assets/images/ProjectPage04.png";
 
 const ProjectPage = () => {
   const Images = [
@@ -15,6 +17,8 @@ const ProjectPage = () => {
     { id: 2, image: two },
     { id: 3, image: three },
     { id: 4, image: four },
+    { id: 5, image: five },
+    { id: 6, image: six },
   ];
   useEffect(() => {
     Aos.init({
@@ -45,11 +49,11 @@ const ProjectPage = () => {
               clients:
             </div>
           </div>
-          <div className="content_wrapper">
+          <div className="projectpage_content_wrapper">
             {Images.map((i) => {
               return (
                 <div
-                  className="content"
+                  className="projectpage_content"
                   key={i.id}
                   data-aos="fade-up"
                   data-aos-delay="300"

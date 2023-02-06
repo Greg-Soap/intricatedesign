@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.scss";
-import Project1 from "../../assets/images/Rectangle 59.png";
-import Project2 from "../../assets/images/Rectangle 63.png";
-import Project3 from "../../assets/images/Rectangle 64.png";
-import Project4 from "../../assets/images/Rectangle 65.png";
+import Project1 from "../../assets/images/Project01.png";
+import Project2 from "../../assets/images/Project02.png";
+import Project3 from "../../assets/images/Project03.png";
+import Project4 from "../../assets/images/Project04.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
