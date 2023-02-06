@@ -4,10 +4,10 @@ import Nav from "../ServicesPage/Nav";
 import Footer from "../../components/footer/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import one from "../../assets/images/Image(2).png";
-import two from "../../assets/images/Image(3).png";
-import three from "../../assets/images/Image(4).png";
-import four from "../../assets/images/Image(5).png";
+import one from "../../assets/images/IMG(2).jpg";
+import two from "../../assets/images/IMG(3).jpg";
+import three from "../../assets/images/IMG(4).jpg";
+import four from "../../assets/images/IMG(6).jpg";
 
 const ProjectPage = () => {
   const Images = [
