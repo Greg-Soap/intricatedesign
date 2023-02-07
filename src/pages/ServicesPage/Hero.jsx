@@ -1,8 +1,8 @@
 import React from "react";
 import "./Style.scss";
-import H1 from "../../assets/images/Rectangle 100.png";
-import H2 from "../../assets/images/Rectangle 101.png";
-import H3 from "../../assets/images/Rectangle 99.png";
+import H1 from "../../assets/images/servicepageheader01.png";
+import H2 from "../../assets/images/servicepageheader02.png";
+import H3 from "../../assets/images/servicepageheader03.png";
 
 const Hero = () => {
   return (
@@ -10,14 +10,12 @@ const Hero = () => {
       <div className="wrapper">
         <div className="left">
           <h1 className="title" data-aos="fade-up">
-            Faucibus ultricies ullamcorper mauris null services ellus.
+            Below are some of the Services we offer:
           </h1>
           <div className="desc" data-aos="fade-up" data-aos-delay="200">
-            Sed purus sit ipsum convallis. Bibendum magna lectus est mi
-            fringilla euismod enim. Consectetur a lacinia consectetur ut.
-            Facilisis malesuada et non id diam. Iaculis sed felis eu lacus
-            faucibus nisl. Egestas sem pharetra proin condimentum enim viverra.
-            Viverra et.
+            From completion of a carcass structure to remodeling and
+            refurbishing here are some of the many services we offer our
+            clients:
           </div>
         </div>
         <div className="right">

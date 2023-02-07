@@ -1,15 +1,15 @@
-import S1 from "../../assets/images/Rectangle 102.png";
-import S2 from "../../assets/images/Rectangle 102(1).png";
-import S3 from "../../assets/images/Rectangle 102(2).png";
-import F1 from "../../assets/images/Rectangle 102(3).png";
-import F2 from "../../assets/images/Rectangle 102(4).png";
-import F3 from "../../assets/images/Rectangle 102(5).png";
-import B1 from "../../assets/images/Rectangle 102(6).png";
-import B2 from "../../assets/images/Rectangle 102(7).png";
-import B3 from "../../assets/images/Rectangle 102(8).png";
-import O1 from "../../assets/images/Rectangle 102(9).png";
-import O2 from "../../assets/images/Rectangle 102(10).png";
-import O3 from "../../assets/images/Rectangle 102(11).png";
+import S1 from "../../assets/images/servicescards12.png";
+import S2 from "../../assets/images/servicescards11.png";
+import S3 from "../../assets/images/servicescards10.png";
+import F1 from "../../assets/images/servicescards03.png";
+import F2 from "../../assets/images/servicescards01.png";
+import F3 from "../../assets/images/servicescards02.png";
+import B1 from "../../assets/images/servicescards06.png";
+import B2 from "../../assets/images/servicescards05.png";
+import B3 from "../../assets/images/servicescards04.png";
+import O1 from "../../assets/images/servicescards09.png";
+import O2 from "../../assets/images/servicescards08.png";
+import O3 from "../../assets/images/servicescards07.png";
 export const Content = [
   {
     id: 1,
